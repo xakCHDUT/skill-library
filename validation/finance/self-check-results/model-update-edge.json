@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "case_id": "model-update-zero-and-missing",
+  "evaluation_role": "author_self_check",
+  "revenue_delta": 5,
+  "revenue_change_pct": null,
+  "revenue_change_reason": "Old estimate is zero; the percentage change is undefined.",
+  "net_income_delta": 3,
+  "net_income_change_pct": null,
+  "net_income_change_reason": "Loss-to-profit transition; show the absolute improvement rather than a misleading negative-base growth rate.",
+  "eps": null,
+  "price_target": null,
+  "upside_pct": null,
+  "consensus_comparison": null,
+  "full_year_forecast": null,
+  "source_ids": ["EDGE"]
+}

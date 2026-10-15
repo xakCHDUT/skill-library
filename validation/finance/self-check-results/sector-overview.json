@@ -1,0 +1,19 @@
+{
+  "synthetic": true,
+  "case_id": "sector-overview-denominator-missing",
+  "evaluation_role": "author_self_check",
+  "eligible_revenue_peers": ["A", "B", "D"],
+  "excluded_group_revenue_peer": "C",
+  "sample_revenue_total": 650,
+  "market_size": null,
+  "market_shares": null,
+  "industry_leader": null,
+  "concentration_ratio": null,
+  "valuation_ranking": null,
+  "growth_rate": null,
+  "ebitda_margin_pct": {"A": 20, "B": 16, "C_in_scope": null, "D": null},
+  "A_minus_B_ebitda_margin_pp": 4,
+  "D_gross_margin_pct": 30,
+  "A_fast_delivery_claim_verified": false,
+  "source_ids": ["A", "B", "C", "D"]
+}

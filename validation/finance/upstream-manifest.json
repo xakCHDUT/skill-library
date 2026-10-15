@@ -1,0 +1,27 @@
+{
+  "upstream_repository": "https://github.com/anthropics/financial-services",
+  "ref": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "retrieved_on": "2026-10-15",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size_bytes": 11358
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "5c203c0ea8f19361b447c7f9592f4658b33b5fae",
+      "size_bytes": 15894
+    },
+    {
+      "path": "plugins/vertical-plugins/equity-research/skills/model-update/SKILL.md",
+      "git_blob_sha": "dc90f5948f7efff2ff0c17c6cfefd67505e0ca81",
+      "size_bytes": 3354
+    },
+    {
+      "path": "plugins/vertical-plugins/equity-research/skills/sector-overview/SKILL.md",
+      "git_blob_sha": "edd4cf59305095b46b6feb580271a772fdfd1a59",
+      "size_bytes": 3458
+    }
+  ]
+}

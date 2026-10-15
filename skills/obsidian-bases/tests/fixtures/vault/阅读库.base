@@ -1,0 +1,17 @@
+filters:
+  and:
+    - 'file.inFolder("资料")'
+    - 'file.hasTag("article")'
+formulas:
+  reading_status: 'if(status == "done", "已读", "待读")'
+properties:
+  formula.reading_status:
+    displayName: 阅读状态
+views:
+  - type: table
+    name: 合成阅读资料
+    order:
+      - file.name
+      - formula.reading_status
+      - score
+      - source

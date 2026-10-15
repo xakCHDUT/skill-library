@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-15",
+  "test_type": "actual_cli_schema_and_isolated_kernel_execution",
+  "passed": 17,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "experiment: Unicode paths succeed with GBK parent environment",
+      "passed": true
+    },
+    {
+      "name": "experiment: schema and explicit unique cell IDs",
+      "passed": true
+    },
+    {
+      "name": "experiment: Unicode title retained",
+      "passed": true
+    },
+    {
+      "name": "experiment: all code cells execute",
+      "passed": true
+    },
+    {
+      "name": "experiment: output agrees with independent arithmetic",
+      "passed": true
+    },
+    {
+      "name": "experiment: fresh kernel rerun is deterministic",
+      "passed": true
+    },
+    {
+      "name": "experiment: existing output preserved",
+      "passed": true
+    },
+    {
+      "name": "experiment: explicit replacement succeeds",
+      "passed": true
+    },
+    {
+      "name": "tutorial: Unicode paths succeed with GBK parent environment",
+      "passed": true
+    },
+    {
+      "name": "tutorial: schema and explicit unique cell IDs",
+      "passed": true
+    },
+    {
+      "name": "tutorial: Unicode title retained",
+      "passed": true
+    },
+    {
+      "name": "tutorial: all code cells execute",
+      "passed": true
+    },
+    {
+      "name": "tutorial: output agrees with independent arithmetic",
+      "passed": true
+    },
+    {
+      "name": "tutorial: fresh kernel rerun is deterministic",
+      "passed": true
+    },
+    {
+      "name": "tutorial: existing output preserved",
+      "passed": true
+    },
+    {
+      "name": "tutorial: explicit replacement succeeds",
+      "passed": true
+    },
+    {
+      "name": "default output belongs to calling directory",
+      "passed": true
+    }
+  ]
+}

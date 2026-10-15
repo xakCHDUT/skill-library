@@ -1,0 +1,13 @@
+{
+  "name": "codex-defuddle-skill-runtime",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "defuddle": "0.19.5",
+    "linkedom": "0.18.12"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

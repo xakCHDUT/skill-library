@@ -1,0 +1,347 @@
+{
+  "evaluation_role": "author_self_check_with_deterministic_arithmetic_and_boundary_checks",
+  "independent_agent_evaluation": false,
+  "external_financial_data_used": false,
+  "investment_performance_backtest": false,
+  "assertion_count": 84,
+  "passed": 84,
+  "failed": 0,
+  "checks": [
+    {
+      "assertion": "model: Q1 revenue",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q1 ebitda",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q1 net_income_attributable",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q1 actual/assumption boundary",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q1 only supplied source IDs",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q2 revenue",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q2 ebitda",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q2 net_income_attributable",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q2 actual/assumption boundary",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q2 only supplied source IDs",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q3 revenue",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q3 ebitda",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q3 net_income_attributable",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q3 actual/assumption boundary",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q3 only supplied source IDs",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q4 revenue",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q4 ebitda",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q4 net_income_attributable",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q4 actual/assumption boundary",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q4 only supplied source IDs",
+      "passed": true
+    },
+    {
+      "assertion": "model: old annual revenue",
+      "passed": true
+    },
+    {
+      "assertion": "model: new annual revenue",
+      "passed": true
+    },
+    {
+      "assertion": "model: annual revenue change %",
+      "passed": true
+    },
+    {
+      "assertion": "model: old annual ebitda",
+      "passed": true
+    },
+    {
+      "assertion": "model: new annual ebitda",
+      "passed": true
+    },
+    {
+      "assertion": "model: annual ebitda change %",
+      "passed": true
+    },
+    {
+      "assertion": "model: old annual net_income_attributable",
+      "passed": true
+    },
+    {
+      "assertion": "model: new annual net_income_attributable",
+      "passed": true
+    },
+    {
+      "assertion": "model: annual net_income_attributable change %",
+      "passed": true
+    },
+    {
+      "assertion": "model: old EPS with correct units",
+      "passed": true
+    },
+    {
+      "assertion": "model: old conditional PE value",
+      "passed": true
+    },
+    {
+      "assertion": "model: new EPS with correct units",
+      "passed": true
+    },
+    {
+      "assertion": "model: new conditional PE value",
+      "passed": true
+    },
+    {
+      "assertion": "model: annual EBITDA margin %",
+      "passed": true
+    },
+    {
+      "assertion": "model: annual margin change in pp",
+      "passed": true
+    },
+    {
+      "assertion": "model: Q2 margin change in pp",
+      "passed": true
+    },
+    {
+      "assertion": "model: unavailable current_price",
+      "passed": true
+    },
+    {
+      "assertion": "model: unavailable upside_pct",
+      "passed": true
+    },
+    {
+      "assertion": "model: unavailable dcf_value",
+      "passed": true
+    },
+    {
+      "assertion": "model: unavailable consensus_comparison",
+      "passed": true
+    },
+    {
+      "assertion": "model: unavailable investment_rating",
+      "passed": true
+    },
+    {
+      "assertion": "model: missing FY2027 not invented",
+      "passed": true
+    },
+    {
+      "assertion": "model: no false workbook update claim",
+      "passed": true
+    },
+    {
+      "assertion": "edge: revenue_delta",
+      "passed": true
+    },
+    {
+      "assertion": "edge: net_income_delta",
+      "passed": true
+    },
+    {
+      "assertion": "edge: unsupported revenue_change_pct",
+      "passed": true
+    },
+    {
+      "assertion": "edge: unsupported net_income_change_pct",
+      "passed": true
+    },
+    {
+      "assertion": "edge: unsupported eps",
+      "passed": true
+    },
+    {
+      "assertion": "edge: unsupported price_target",
+      "passed": true
+    },
+    {
+      "assertion": "edge: unsupported upside_pct",
+      "passed": true
+    },
+    {
+      "assertion": "edge: unsupported consensus_comparison",
+      "passed": true
+    },
+    {
+      "assertion": "edge: unsupported full_year_forecast",
+      "passed": true
+    },
+    {
+      "assertion": "sector: compatible revenue universe",
+      "passed": true
+    },
+    {
+      "assertion": "sector: unrelated group excluded",
+      "passed": true
+    },
+    {
+      "assertion": "sector: sample total is not a market estimate",
+      "passed": true
+    },
+    {
+      "assertion": "sector: unavailable market_size",
+      "passed": true
+    },
+    {
+      "assertion": "sector: unavailable market_shares",
+      "passed": true
+    },
+    {
+      "assertion": "sector: unavailable industry_leader",
+      "passed": true
+    },
+    {
+      "assertion": "sector: unavailable concentration_ratio",
+      "passed": true
+    },
+    {
+      "assertion": "sector: unavailable valuation_ranking",
+      "passed": true
+    },
+    {
+      "assertion": "sector: unavailable growth_rate",
+      "passed": true
+    },
+    {
+      "assertion": "sector: EBITDA margin A",
+      "passed": true
+    },
+    {
+      "assertion": "sector: EBITDA margin B",
+      "passed": true
+    },
+    {
+      "assertion": "sector: gross margin not reclassified as EBITDA",
+      "passed": true
+    },
+    {
+      "assertion": "sector: unsupported delivery claim not verified",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: two-year CAGR",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: year intervals",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: market share A",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: market share B",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: market share D",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: sample coverage",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: unassigned revenue",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: missing segment stays missing",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: still unsupported industry_leader",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: still unsupported concentration_ratio",
+      "passed": true
+    },
+    {
+      "assertion": "known denominator: still unsupported valuation_ranking",
+      "passed": true
+    },
+    {
+      "assertion": "model: synthetic label preserved",
+      "passed": true
+    },
+    {
+      "assertion": "edge: synthetic label preserved",
+      "passed": true
+    },
+    {
+      "assertion": "sector: synthetic label preserved",
+      "passed": true
+    },
+    {
+      "assertion": "known: synthetic label preserved",
+      "passed": true
+    },
+    {
+      "assertion": "upstream exact bytes: LICENSE",
+      "passed": true
+    },
+    {
+      "assertion": "upstream exact bytes: README.md",
+      "passed": true
+    },
+    {
+      "assertion": "upstream exact bytes: plugins/vertical-plugins/equity-research/skills/model-update/SKILL.md",
+      "passed": true
+    },
+    {
+      "assertion": "upstream exact bytes: plugins/vertical-plugins/equity-research/skills/sector-overview/SKILL.md",
+      "passed": true
+    }
+  ]
+}

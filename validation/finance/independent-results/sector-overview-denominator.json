@@ -1,0 +1,23 @@
+{
+  "case_id": "sector-overview-known-denominator",
+  "synthetic": true,
+  "analysis_date": "2026-10-15",
+  "scope": {"product": "industrial thermal controllers", "geography": "China domestic sales", "financial_unit": "CNY million", "market_coverage": "all_suppliers_including_unlisted", "distributor_resale_double_counting": false, "accounting_definition_matches_A_B_D": true},
+  "market": {"source": "MARKET", "classification": "synthetic_historical_census", "FY2023_revenue": 800, "FY2025_revenue": 968, "absolute_growth": 168, "cumulative_growth_pct": 21, "annual_intervals": 2, "cagr_formula": "(968/800)^(1/2)-1", "cagr": 0.1, "cagr_pct": 10, "FY2024_revenue": null, "forward_growth_pct": null, "is_tam": false},
+  "fy2025_market_shares": {
+    "A": {"numerator_source": "A", "revenue": 300, "denominator": 968, "share": 0.3099173553719008, "share_pct": 30.99173553719008, "ebitda": 60, "ebitda_margin_pct": 20},
+    "B": {"numerator_source": "B", "revenue": 250, "denominator": 968, "share": 0.2582644628099174, "share_pct": 25.826446280991735, "ebitda": 40, "ebitda_margin_pct": 16},
+    "D": {"numerator_source": "D", "revenue": 100, "denominator": 968, "share": 0.1033057851239669, "share_pct": 10.330578512396695, "gross_margin_pct": 30, "ebitda": null, "ebitda_margin_pct": null},
+    "C": {"numerator_source": "C", "in_scope_revenue": null, "share": null, "share_pct": null, "group_revenue_excluded": 1000}
+  },
+  "identified_supplier_coverage": {"suppliers": ["A", "B", "D"], "revenue_sum": 650, "share": 0.6714876033057852, "share_pct": 67.14876033057851, "is_cr3": false},
+  "unallocated_market": {"revenue": 318, "share": 0.3285123966942149, "share_pct": 32.85123966942149, "could_include_supplier_larger_than_A": true},
+  "largest_observed_comparable_supplier": "A",
+  "market_leader": null,
+  "market_leader_proven": false,
+  "concentration_ratio": null,
+  "valuation_ranking": null,
+  "stock_return_ranking": null,
+  "valuation_ranking_proven": false,
+  "unavailable": ["individual_unobserved_supplier_revenues", "C_controller_segment_revenue", "D_ebitda", "market_prices", "enterprise_values", "aligned_historical_and_forward_multiples", "earnings_forecasts", "detailed_value_chain", "independent_delivery_evidence"]
+}

@@ -1,0 +1,1489 @@
+{
+  "output_author": "independent_forward_test_agent",
+  "grader_role": "skill_adapter_after_receiving_raw_outputs",
+  "raw_outputs_modified": false,
+  "normalization_used": false,
+  "missing_fields_default_to_pass": false,
+  "independent_agent_evaluation": true,
+  "external_financial_data_used": false,
+  "investment_performance_backtest": false,
+  "input_output_sha256": {
+    "model-update.json": "7a01d951c8cf267fb5125e21819e5764ebb7d824bbdcb7146b3ba3f6b05812d6",
+    "model-update.md": "8836ea6e9f23fa43ce68d21447b0104ce4a7a39d059e6905baf5a17488d67b2c",
+    "model-update-edge.json": "5423211147fa7e1ab98f3e2aa93c2f5ae0358a8da75d3897bc353f64003dfe12",
+    "model-update-edge.md": "0029673260d6441562dc0c77601a85f8ebc6e370e8b4cecd5b7ec6c76a395d1d",
+    "sector-overview.json": "6cc0517576a40859c8ec6b488825118139b2f6670bce89b69816eb8095226a97",
+    "sector-overview.md": "23b9415249a65de89b3141a3d0c6f499d9d0c40b61df7a75c7edf43ebeea4db0",
+    "sector-overview-denominator.json": "bcadf2da182b3bd91a43f5a984c14cbcf5039489b453a9a77c7a634c09b90ab0",
+    "sector-overview-denominator.md": "4553443846ec90fa04c8a5f9b9792c2d05e49a88352bfc44610fb5ed3d49f09f"
+  },
+  "assertion_count": 241,
+  "passed": 241,
+  "failed": 0,
+  "per_case": {
+    "model-update-quarterly": {
+      "passed": 108,
+      "failed": 0
+    },
+    "model-update-zero-and-missing": {
+      "passed": 32,
+      "failed": 0
+    },
+    "sector-overview-denominator-missing": {
+      "passed": 46,
+      "failed": 0
+    },
+    "sector-overview-known-denominator": {
+      "passed": 55,
+      "failed": 0
+    }
+  },
+  "checks": [
+    {
+      "case": "model-update-quarterly",
+      "field": "case_id",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "synthetic",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "information_cutoff",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.revenue.old_estimate",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.revenue.reported_actual",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.revenue.change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.revenue.change_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.ebitda.old_estimate",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.ebitda.reported_actual",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.ebitda.change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.ebitda.change_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.net_income_attributable.old_estimate",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.net_income_attributable.reported_actual",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.net_income_attributable.change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.net_income_attributable.change_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.ebitda_margin.old_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.ebitda_margin.actual_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.ebitda_margin.change_pp",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.net_income_margin.old_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.net_income_margin.actual_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "q2_actual_vs_estimate.net_income_margin.change_pp",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q1.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q1.revenue_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q1.ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q1.ebitda_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q1.net_income_attributable",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q1.net_income_attributable_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q1.classification",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q2.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q2.revenue_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q2.ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q2.ebitda_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q2.net_income_attributable",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q2.net_income_attributable_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q2.classification",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q3.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q3.revenue_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q3.ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q3.ebitda_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q3.net_income_attributable",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q3.net_income_attributable_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q3.classification",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q4.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q4.revenue_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q4.ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q4.ebitda_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q4.net_income_attributable",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "revision_bridge.Q4.net_income_attributable_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "quarterly_new.Q4.classification",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.old.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.old.ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.old.net_income_attributable",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.old.weighted_average_diluted_shares",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.old.eps",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.old.ebitda_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.old.net_income_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.new.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.new.ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.new.net_income_attributable",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.new.weighted_average_diluted_shares",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.new.eps",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.new.ebitda_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.new.net_income_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.revenue_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.ebitda_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.net_income_attributable",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.net_income_attributable_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.eps",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.eps_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.ebitda_margin_pp",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.change.net_income_margin_pp",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "fy2026.shares_classification",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "guidance.classification",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "guidance.revenue_min",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "guidance.revenue_max",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "guidance.revised_revenue_within_range",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "guidance.above_lower_bound",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "guidance.below_upper_bound",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "pe_valuation.classification",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "pe_valuation.multiple_explicit_assumption",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "pe_valuation.prior_value",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "pe_valuation.revised_value",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "pe_valuation.change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "pe_valuation.change_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "pe_valuation.upside_to_current_price",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.current_share_price",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.consensus_eps",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.fy2027_forecast",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.dcf_value",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.ev_based_value",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.investment_rating",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.segment_reconciliation",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.capital_expenditure",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.working_capital",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "unavailable.nonrecurring_items",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "balance_sheet.cash_reported",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "balance_sheet.debt_reported",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "balance_sheet.net_cash_derived",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "balance_sheet.net_debt_derived",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "balance_sheet.statement_date",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "balance_sheet.prior_balance_changes",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "workbook_updated",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "sources.prior_estimates",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "sources.reported_actuals",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "sources.explicit_assumptions",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-quarterly",
+      "field": "sources.revenue_guidance",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "case_id",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "synthetic",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "source",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "information_cutoff",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "revenue.old_estimate",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "revenue.reported_actual",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "revenue.absolute_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "revenue.change_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "revenue.yoy_growth_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_attributable.old_estimate",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_attributable.reported_actual",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_attributable.absolute_change",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_attributable.change_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_attributable.yoy_growth_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "revenue.change_pct_status",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_attributable.change_pct_status",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_attributable.interpretation",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_margin.actual_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_margin.old_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "net_income_margin.change_pp",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "weighted_average_diluted_shares",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "old_eps",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "actual_eps",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "target_multiple",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "target_price",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "current_share_price",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "upside_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "consensus",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "future_quarters",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "full_year_forecast",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "investment_rating",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "model-update-zero-and-missing",
+      "field": "workbook_updated",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "case_id",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "synthetic",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "comparable_sample.members",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "comparable_sample.revenue_sum",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "comparable_sample.share_denominator",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "comparable_sample.share_type",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "comparable_sample.is_total_market_size",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.A.in_scope_revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.A.derived_sample_share_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.A.market_share_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.B.in_scope_revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.B.derived_sample_share_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.B.market_share_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.D.in_scope_revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.D.derived_sample_share_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.D.market_share_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.A.reported_ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.A.derived_ebitda_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.B.reported_ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.B.derived_ebitda_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "comparable_sample.a_minus_b_ebitda_margin_pp",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.C.group_revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.C.group_ebitda",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.C.derived_group_ebitda_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.C.included_in_comparable_sample",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.C.in_scope_revenue",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.C.in_scope_ebitda",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.C.market_share_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.D.ebitda",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.D.ebitda_margin_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.D.reported_gross_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.D.derived_gross_profit",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.A.delivery_claim_verified",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.B.customer_retention",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.A.source",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.B.source",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.C.source",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "companies.D.source",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "total_market_size",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "market_leader",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "concentration_ratio",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "growth_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "cagr_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "valuation_ranking",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "stock_return_ranking",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-denominator-missing",
+      "field": "market_leader_proven",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "case_id",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "synthetic",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.source",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.classification",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.FY2023_revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.FY2025_revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.absolute_growth",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.cumulative_growth_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.annual_intervals",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.cagr",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.cagr_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.FY2024_revenue",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.forward_growth_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market.is_tam",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "scope.distributor_resale_double_counting",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "scope.accounting_definition_matches_A_B_D",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.A.numerator_source",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.A.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.A.denominator",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.A.share",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.A.share_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.B.numerator_source",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.B.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.B.denominator",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.B.share",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.B.share_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.D.numerator_source",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.D.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.D.denominator",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.D.share",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.D.share_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.A.ebitda_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.B.ebitda_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.D.gross_margin_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.D.ebitda",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.D.ebitda_margin_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.C.in_scope_revenue",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.C.share",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "fy2025_market_shares.C.share_pct",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "identified_supplier_coverage.suppliers",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "identified_supplier_coverage.revenue_sum",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "identified_supplier_coverage.share",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "identified_supplier_coverage.share_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "identified_supplier_coverage.is_cr3",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "unallocated_market.revenue",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "unallocated_market.share",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "unallocated_market.share_pct",
+      "passed": true,
+      "note": "Arithmetic recomputed from supplied inputs"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "unallocated_market.could_include_supplier_larger_than_A",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "largest_observed_comparable_supplier",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market_leader",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "concentration_ratio",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "valuation_ranking",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "stock_return_ranking",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "market_leader_proven",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    },
+    {
+      "case": "sector-overview-known-denominator",
+      "field": "valuation_ranking_proven",
+      "passed": true,
+      "note": "Direct comparison; no default value"
+    }
+  ]
+}

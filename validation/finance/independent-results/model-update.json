@@ -1,0 +1,40 @@
+{
+  "case_id": "model-update-quarterly",
+  "synthetic": true,
+  "analysis_date": "2026-10-15",
+  "information_cutoff": "2026-08-15",
+  "units": {"financials": "CNY million", "shares": "million diluted shares", "eps_and_per_share_value": "CNY per share", "percentage_changes": "percent", "margin_changes": "percentage points"},
+  "sources": {"prior_estimates": "OLD", "reported_actuals": "ACT", "explicit_assumptions": "ASSUMPTIONS", "revenue_guidance": "GUIDANCE", "balance_sheet": "case.reported_balance_sheet; exact statement date unspecified"},
+  "q2_actual_vs_estimate": {
+    "revenue": {"old_estimate": 300, "reported_actual": 280, "change": -20, "change_pct": -6.666666666666667},
+    "ebitda": {"old_estimate": 60, "reported_actual": 42, "change": -18, "change_pct": -30},
+    "net_income_attributable": {"old_estimate": 30, "reported_actual": 18, "change": -12, "change_pct": -40},
+    "ebitda_margin": {"old_pct": 20, "actual_pct": 15, "change_pp": -5},
+    "net_income_margin": {"old_pct": 10, "actual_pct": 6.428571428571429, "change_pp": -3.571428571428571}
+  },
+  "quarterly_new": {
+    "Q1": {"classification": "reported_actual", "revenue": 250, "ebitda": 50, "net_income_attributable": 25},
+    "Q2": {"classification": "reported_actual", "revenue": 280, "ebitda": 42, "net_income_attributable": 18},
+    "Q3": {"classification": "forecast_from_explicit_assumptions", "revenue_formula": "330*(1-0.10)", "revenue": 297, "ebitda_formula": "297*0.18", "ebitda": 53.46, "ebitda_margin_pct": 18, "net_income_attributable": 24},
+    "Q4": {"classification": "forecast_from_explicit_assumptions", "revenue_formula": "370*(1-0.05)", "revenue": 351.5, "ebitda_formula": "351.5*0.19", "ebitda": 66.785, "ebitda_margin_pct": 19, "net_income_attributable": 31}
+  },
+  "revision_bridge": {
+    "Q1": {"revenue_change": 0, "ebitda_change": 0, "net_income_attributable_change": 0},
+    "Q2": {"revenue_change": -20, "ebitda_change": -18, "net_income_attributable_change": -12},
+    "Q3": {"revenue_change": -33, "ebitda_change": -12.54, "net_income_attributable_change": -9},
+    "Q4": {"revenue_change": -18.5, "ebitda_change": -7.215, "net_income_attributable_change": -6}
+  },
+  "fy2026": {
+    "classification": "derived_full_year_forecast_including_reported_Q1_Q2",
+    "old": {"revenue": 1250, "ebitda": 250, "net_income_attributable": 125, "ebitda_margin_pct": 20, "net_income_margin_pct": 10, "weighted_average_diluted_shares": 100, "eps": 1.25},
+    "new": {"revenue": 1178.5, "ebitda": 212.245, "net_income_attributable": 98, "ebitda_margin_pct": 18.009758167161646, "net_income_margin_pct": 8.31565549427238, "weighted_average_diluted_shares": 100, "eps": 0.98},
+    "change": {"revenue": -71.5, "revenue_pct": -5.72, "ebitda": -37.755, "ebitda_pct": -15.102, "net_income_attributable": -27, "net_income_attributable_pct": -21.6, "ebitda_margin_pp": -1.990241832838354, "net_income_margin_pp": -1.68434450572762, "eps": -0.27, "eps_pct": -21.6},
+    "eps_formula": "full_year_net_income_attributable/full_year_weighted_average_diluted_shares",
+    "shares_classification": "constant_explicit_assumption"
+  },
+  "guidance": {"classification": "company_forecast_not_actual", "revenue_min": 1150, "revenue_max": 1250, "revised_revenue_within_range": true, "above_lower_bound": 28.5, "below_upper_bound": 71.5},
+  "pe_valuation": {"classification": "conditional_scenario", "multiple_explicit_assumption": 20, "prior_value": 25, "revised_value": 19.6, "change": -5.4, "change_pct": -21.6, "driver": "earnings_change_only; multiple_and_shares_unchanged", "upside_to_current_price": null},
+  "balance_sheet": {"cash_reported": 180, "debt_reported": 60, "net_cash_derived": 120, "net_debt_derived": -120, "statement_date": null, "prior_balance_changes": null},
+  "unavailable": {"current_share_price": null, "consensus_eps": null, "fy2027_forecast": null, "dcf_value": null, "ev_based_value": null, "investment_rating": null, "segment_reconciliation": null, "capital_expenditure": null, "working_capital": null, "nonrecurring_items": null},
+  "workbook_updated": false
+}

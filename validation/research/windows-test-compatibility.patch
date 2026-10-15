@@ -1,0 +1,20 @@
+--- a/tests/exploratory-data-analysis/test_scripts.py
++++ b/tests/exploratory-data-analysis/test_scripts.py
+@@ -66,7 +66,8 @@
+             output = root / "report.json"
+             _common.emit_json({"ok": True}, output="report.json", root=root)
+             self.assertEqual(json.loads(output.read_text()), {"ok": True})
+-            self.assertEqual(stat.S_IMODE(output.stat().st_mode), 0o600)
++            if os.name != "nt":
++                self.assertEqual(stat.S_IMODE(output.stat().st_mode), 0o600)
+             with self.assertRaises(_common.CliError):
+                 _common.emit_json({"ok": False}, output="report.json", root=root)
+ 
+@@ -310,6 +311,7 @@
+             positions = np.linspace(0, expected.size - 1, 4096, dtype=np.int64)
+             np.testing.assert_array_equal(sample, expected.flat[positions])
+             self.assertEqual(sample.size, 4096)
++            mapped._mmap.close()  # release Windows handle before fixture cleanup
+ 
+ 
+ class SequenceAndImageTests(unittest.TestCase):

@@ -1,0 +1,22 @@
+{
+  "case_id": "sector-overview-denominator-missing",
+  "synthetic": true,
+  "analysis_date": "2026-10-15",
+  "scope": {"product": "industrial thermal controllers", "geography": "China domestic sales", "period": "FY2025", "financial_unit": "CNY million", "company_ownership_status": "unavailable"},
+  "companies": {
+    "A": {"source": "A", "in_scope_revenue": 300, "reported_ebitda": 60, "derived_ebitda_margin_pct": 20, "derived_sample_share_pct": 46.15384615384615, "market_share_pct": null, "delivery_claim_verified": false},
+    "B": {"source": "B", "in_scope_revenue": 250, "reported_ebitda": 40, "derived_ebitda_margin_pct": 16, "derived_sample_share_pct": 38.46153846153846, "market_share_pct": null, "customer_retention": null},
+    "C": {"source": "C", "group_revenue": 1000, "group_ebitda": 180, "derived_group_ebitda_margin_pct": 18, "in_scope_revenue": null, "in_scope_ebitda": null, "included_in_comparable_sample": false, "exclusion_reason": "group_totals_include_unrelated_products; no_controller_segment_data", "market_share_pct": null},
+    "D": {"source": "D", "in_scope_revenue": 100, "reported_gross_margin_pct": 30, "derived_gross_profit": 30, "ebitda": null, "ebitda_margin_pct": null, "derived_sample_share_pct": 15.384615384615385, "market_share_pct": null}
+  },
+  "comparable_sample": {"members": ["A", "B", "D"], "revenue_sum": 650, "revenue_sum_formula": "300+250+100", "share_denominator": 650, "share_type": "sample_share_not_market_share", "is_total_market_size": false, "revenue_ranking_within_sample": ["A", "B", "D"], "a_minus_b_ebitda_margin_pp": 4},
+  "total_market_size": null,
+  "market_leader": null,
+  "market_leader_proven": false,
+  "concentration_ratio": null,
+  "growth_pct": null,
+  "cagr_pct": null,
+  "valuation_ranking": null,
+  "stock_return_ranking": null,
+  "evidence_status": {"inputs": "synthetic_reported_facts_except_identified_company_claim", "ratios": "derived_calculations", "market_denominator": "unavailable", "full_value_chain": "unavailable", "valuations": "unavailable"}
+}

@@ -1,0 +1,188 @@
+{
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "files": [
+    {
+      "path": "skills/exploratory-data-analysis/SKILL.md",
+      "sha": "c461f99dea057872298ce6f04e7c090a83d80d01"
+    },
+    {
+      "path": "skills/statistical-analysis/SKILL.md",
+      "sha": "4ea7453a12e63f0dbc31d7a47ed41fe3ff4c4c1a"
+    },
+    {
+      "path": "tests/exploratory-data-analysis/test_scripts.py",
+      "sha": "80aa9d524909d69ad7f5a9f59bd16ae1d34913ed"
+    },
+    {
+      "path": "tests/exploratory-data-analysis/test_static.py",
+      "sha": "5d164df245d4099fe1392c709d4fc2ac442c99a7"
+    },
+    {
+      "path": "tests/statistical-analysis/test_scripts.py",
+      "sha": "c932683628b7da9895b8dd06f2329c0a2a1b6de9"
+    },
+    {
+      "path": "tests/_contract/__init__.py",
+      "sha": "2a4dc7deb8ee389f9dedd9695561f0acf65b07fd"
+    },
+    {
+      "path": "tests/_contract/cli.py",
+      "sha": "e24ca3ccd754c87dfd4725b234e98a4e7e89f96f"
+    },
+    {
+      "path": "tests/_contract/schematic.py",
+      "sha": "edfef07fad2cf34568c47c901e6a40a4bf55ed6a"
+    },
+    {
+      "path": "tests/_contract/structure.py",
+      "sha": "ee28d6610132763727f724ae340236e7fd30b445"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/assets/report_template.md",
+      "sha": "cf651d8d360f702230d03c124a2ff0f5b2e2e97c",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/bioinformatics_genomics_formats.md",
+      "sha": "c82fb3679a4e7db3be07bf11c98666166e9b4605",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/chemistry_molecular_formats.md",
+      "sha": "40d5dff9437c596e79bf53d98ce5135e8d1bec49",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/general_scientific_formats.md",
+      "sha": "1fcfd35ac18b2caa932ca2009b987ae0b1261550",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/microscopy_imaging_formats.md",
+      "sha": "4159a6bd6aaeddbc5147b9e71ade65359fce13b2",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/proteomics_metabolomics_formats.md",
+      "sha": "f04246379bca90d2a8bf0e27633da55dfd276596",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/spectroscopy_analytical_formats.md",
+      "sha": "429ddc84592a6deee21c13b69d6ae16eefa972d3",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/__init__.py",
+      "sha": "7fb9dd8fa120dd2d00eb2be0c5a4c1c4349c908a",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/_capabilities.py",
+      "sha": "9aa1327f23a58324baabb777c98a01b577787fa1",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/_common.py",
+      "sha": "d098fc4e0acf3a0f67c8a4f6596ba69e29388b1b",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/_structured.py",
+      "sha": "714ec59a5d187359c0a329c3d81b5b3196af9ee9",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/_tabular.py",
+      "sha": "5311d1a9aef4995210442792e6a75221e8ad60f1",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/capability_manifest.py",
+      "sha": "a1ee36326ea6889b38428714283ce2f4952db461",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/distribution_sensitivity.py",
+      "sha": "f8db91f4b7391152ae2b808387d67543bf52bb38",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/eda_analyzer.py",
+      "sha": "40781abbc7879354c3430fc6f35ebad2331f195e",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/image_inspector.py",
+      "sha": "a051fd39b64f3d511e3b764eda78b9f72d776db4",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/missingness_leakage_audit.py",
+      "sha": "af3f1e98588547674dbfc6bc56644fe749b747c8",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/report_scaffold.py",
+      "sha": "a816e5f422078b7fddbe6bd4c465422c9a5ea651",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/sequence_inspector.py",
+      "sha": "66e985e15ef369ba26cbdd65cc2a6ec4460d7a0c",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/tabular_profile.py",
+      "sha": "874ef86b871eb72b8f95a87cfc4cad29f72be148",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/statistical-analysis/references/assumptions_and_diagnostics.md",
+      "sha": "08fa85f9709297dcad84bfbb138b94df7692685c",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/statistical-analysis/references/bayesian_statistics.md",
+      "sha": "e78e65e190fd3a68034f0e1b1706383eb0888022",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/statistical-analysis/references/effect_sizes_and_power.md",
+      "sha": "44d0c74e9d9d416485b2d7a8f56010494d907bcc",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/statistical-analysis/references/reporting_standards.md",
+      "sha": "38e0ccd4b1d835504f70a1cea3a6526667fe890a",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/statistical-analysis/references/test_selection_guide.md",
+      "sha": "c518d9e57aee5f8713d153cdc6fe154a9293a9e7",
+      "mode": "100644"
+    },
+    {
+      "path": "skills/statistical-analysis/scripts/assumption_checks.py",
+      "sha": "a55993050ec75027fc7e9b465b4c0b718548b198",
+      "mode": "100644"
+    },
+    {
+      "path": "LICENSE.md",
+      "sha": "eb246475fd5a66b9bb56176f3a718984632dd98d"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha": "5f733044e8e8e35754275e19e6b9a39418f56f50"
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha": "3df1d39be005cc06382776240687ed337f06351d"
+    },
+    {
+      "path": "tests/skill-requirements.toml",
+      "sha": "508bf985d7e601841e0c0e25edc831b3f3cb4285"
+    }
+  ]
+}

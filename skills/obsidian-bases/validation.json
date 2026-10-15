@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-15",
+  "skill": "obsidian-bases",
+  "status": "passed",
+  "checks_passed": 12,
+  "checks": [
+    "three Markdown files have valid unique-key YAML frontmatter",
+    "title, tags and aliases retain their intended property types",
+    "sample scores and dates parse as numbers and dates",
+    "six note, heading, block and Base embed targets resolve",
+    "Base YAML structure, filter shape and formula references validate",
+    "all sample table columns have corresponding note or formula properties",
+    "duplicate YAML keys are rejected",
+    "broken note links are rejected",
+    "missing heading anchors are rejected",
+    "missing block anchors are rejected",
+    "undefined formula references are rejected",
+    "ambiguous multi-operator filter objects are rejected"
+  ],
+  "scope": "synthetic fixture file checks only",
+  "renderer_verified": false,
+  "formula_evaluation_verified": false,
+  "private_data_used": false,
+  "notes": "These twelve shared checks are the same fixture run for both Obsidian skills, not twenty-four independent tests."
+}

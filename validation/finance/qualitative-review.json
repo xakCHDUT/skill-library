@@ -1,0 +1,57 @@
+{
+  "reviewer_role": "skill_adapter_reviewing_independent_agent_outputs",
+  "review_type": "human_style_semantic_read_of_all_four_raw_memos",
+  "automated_semantic_judge": false,
+  "raw_memos_modified": false,
+  "cases": [
+    {
+      "case_id": "model-update-quarterly",
+      "memo": "independent-results/model-update.md",
+      "checks": [
+        {"criterion": "Synthetic label and information cutoff retained", "passed": true, "evidence": "Opening paragraph separates preparation date from the case cutoff, labels every company and number fictional, and states units and accounting-basis limits."},
+        {"criterion": "Reported actuals and future assumptions separated", "passed": true, "evidence": "Q1/Q2 remain actuals; Q3/Q4 are expressly attributed to ASSUMPTIONS rather than company guidance; guidance is separately labeled a forecast."},
+        {"criterion": "Unsupported sources and conclusions not invented", "passed": true, "evidence": "Memo uses OLD/ACT/ASSUMPTIONS/GUIDANCE and the supplied balance-sheet field; it flags the unspecified balance-sheet date and absence of consensus, FY2027 and the prior thesis."},
+        {"criterion": "No false workbook, rating or price-upside claim", "passed": true, "evidence": "The memo calls the PE result conditional, does not create a rating or upside without price, and explicitly states no workbook was modified."},
+        {"criterion": "Memo and structured arithmetic agree", "passed": true, "evidence": "Quarterly bridge, annual totals, EPS, margin percentage points and PE values agree with the directly graded JSON; memo rounding preserves the calculations."}
+      ]
+    },
+    {
+      "case_id": "model-update-zero-and-missing",
+      "memo": "independent-results/model-update-edge.md",
+      "checks": [
+        {"criterion": "Synthetic and source boundaries retained", "passed": true, "evidence": "Opening identifies EDGE as the only source and does not invent a specific quarter number, year, accounting standard or prior-model date."},
+        {"criterion": "Zero and negative bases handled meaningfully", "passed": true, "evidence": "Income changes are absolute; the memo explains why zero-denominator revenue growth and a loss-to-profit percentage are not reported, and distinguishes estimate deviations from year-on-year growth."},
+        {"criterion": "Missing inputs remain unavailable", "passed": true, "evidence": "No diluted shares are borrowed from the other case; EPS, valuation multiple, current price, consensus and annual forecasts remain unavailable."},
+        {"criterion": "No false workbook or rating claim", "passed": true, "evidence": "Memo explicitly declines to invent a rating and states that no workbook, external communication or trade was performed."},
+        {"criterion": "Memo and structured arithmetic agree", "passed": true, "evidence": "Revenue improvement of 5, attributable-income improvement of 3 and actual net margin of 20% agree with the JSON; undefined values are not presented as zero."}
+      ]
+    },
+    {
+      "case_id": "sector-overview-denominator-missing",
+      "memo": "independent-results/sector-overview.md",
+      "checks": [
+        {"criterion": "Synthetic historical scope retained", "passed": true, "evidence": "Opening limits conclusions to FY2025 supplied disclosures and explicitly avoids treating them as current FY2026 performance."},
+        {"criterion": "Peer definitions and metric comparability preserved", "passed": true, "evidence": "C's mixed group is excluded from comparable revenue; its group margin is labeled as such; D's gross margin is not used as EBITDA margin."},
+        {"criterion": "Sample share not promoted to market share", "passed": true, "evidence": "The 650 denominator and A/B/D percentages are expressly described as a sample; market share, leadership and concentration remain unknown."},
+        {"criterion": "No invented industry facts or investment ranking", "passed": true, "evidence": "Delivery speed remains an unverified management claim; missing value-chain and growth information is described as missing; operating metrics are not turned into a valuation or buy/sell ranking."},
+        {"criterion": "Memo and structured arithmetic agree", "passed": true, "evidence": "Sample revenue, sample percentages, A/B margin difference and D gross profit match the JSON. No workbook creation or external service access is claimed."}
+      ]
+    },
+    {
+      "case_id": "sector-overview-known-denominator",
+      "memo": "independent-results/sector-overview-denominator.md",
+      "checks": [
+        {"criterion": "New source scope and synthetic status retained", "passed": true, "evidence": "MARKET is identified as a supplied historical census with matched scope, full coverage and no distributor resale double counting; publication date is not invented."},
+        {"criterion": "Historical CAGR distinguished from annual facts or forecasts", "passed": true, "evidence": "Memo uses two elapsed intervals and states that 10% CAGR does not prove FY2024 revenue, equal annual growth, or future growth."},
+        {"criterion": "Supported shares and unknown leader separated", "passed": true, "evidence": "A/B/D shares use 968; their 67.1488% coverage is not called CR3; unobserved revenue could include a supplier larger than A."},
+        {"criterion": "Remaining missing valuation and margin data not filled", "passed": true, "evidence": "C segment revenue, D EBITDA and stock valuation rankings remain unknown; the extra denominator is not used to fabricate these inputs."},
+        {"criterion": "Memo and structured arithmetic agree", "passed": true, "evidence": "CAGR, market shares, known coverage and remaining revenue match the JSON; no workbook, rating or service-access claim is made."}
+      ]
+    }
+  ],
+  "manual_check_count": 20,
+  "passed": 20,
+  "failed": 0,
+  "material_findings": [],
+  "limits": "Semantic review by the skill adapter is distinct from output generation by the fresh independent agent. The cases are small, synthetic and not an investment-performance backtest."
+}

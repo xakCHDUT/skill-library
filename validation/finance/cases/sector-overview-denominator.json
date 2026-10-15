@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "case_id": "sector-overview-known-denominator",
+  "base_case": "sector-overview.json",
+  "additional_source": {
+    "id": "MARKET",
+    "description": "Synthetic industry census: all suppliers' China domestic industrial thermal controller sales, no distributor resale double counting, same accounting revenue definition as A/B/D.",
+    "financial_unit": "CNY million",
+    "FY2023_total_market_revenue": 800,
+    "FY2025_total_market_revenue": 968,
+    "known_coverage": "Full market denominator; individual unlisted suppliers' revenues are not disclosed."
+  },
+  "user_request": "Use the additional matched-scope market source to calculate supported FY2025 market shares and the FY2023-FY2025 CAGR. Do these data prove the market leader or a stock valuation ranking?"
+}

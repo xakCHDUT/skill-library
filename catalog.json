@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-10-15",
+  "skills": [
+    {
+      "id": "exploratory-data-analysis",
+      "category": "research",
+      "upstream": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "path": "skills/exploratory-data-analysis",
+        "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+        "fork": "xakCHDUT/scientific-agent-skills"
+      },
+      "license": "MIT",
+      "status": "validated_selected_cases",
+      "validation": {
+        "summary": "33 pytest cases passed, 1 Windows symlink fixture skipped; synthetic task checks and real junction rejection passed",
+        "report": "validation/research/report.md"
+      }
+    },
+    {
+      "id": "statistical-analysis",
+      "category": "research",
+      "upstream": {
+        "repository": "K-Dense-AI/scientific-agent-skills",
+        "path": "skills/statistical-analysis",
+        "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+        "fork": "xakCHDUT/scientific-agent-skills"
+      },
+      "license": "MIT",
+      "status": "validated_selected_cases",
+      "validation": {
+        "summary": "33 pytest cases passed; independent synthetic arithmetic checks passed; optional Bayesian sampling untested",
+        "report": "validation/research/report.md"
+      }
+    },
+    {
+      "id": "model-update",
+      "category": "finance",
+      "upstream": {
+        "repository": "anthropics/financial-services",
+        "path": "plugins/vertical-plugins/equity-research/skills/model-update",
+        "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+        "fork": "xakCHDUT/financial-services"
+      },
+      "license": "Apache-2.0",
+      "status": "validated_selected_cases",
+      "validation": {
+        "summary": "2 independent synthetic cases passed: 140 direct assertions and 10 memo review criteria; author self-check recorded separately; no live-data or return backtest",
+        "report": "validation/finance/report.md"
+      }
+    },
+    {
+      "id": "sector-overview",
+      "category": "finance",
+      "upstream": {
+        "repository": "anthropics/financial-services",
+        "path": "plugins/vertical-plugins/equity-research/skills/sector-overview",
+        "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+        "fork": "xakCHDUT/financial-services"
+      },
+      "license": "Apache-2.0",
+      "status": "validated_selected_cases",
+      "validation": {
+        "summary": "2 independent synthetic cases passed: 101 direct assertions and 10 memo review criteria; author self-check recorded separately; no live-data or return backtest",
+        "report": "validation/finance/report.md"
+      }
+    },
+    {
+      "id": "defuddle",
+      "category": "knowledge",
+      "upstream": {
+        "repository": "kepano/obsidian-skills",
+        "path": "skills/defuddle",
+        "commit": "3ccff5338ea700537839b21900aa5358a0402c98",
+        "fork": "xakCHDUT/obsidian-skills"
+      },
+      "license": "MIT",
+      "status": "validated_selected_cases",
+      "validation": {
+        "summary": "8 synthetic HTML checks passed",
+        "report": "validation/knowledge/report.md"
+      }
+    },
+    {
+      "id": "obsidian-markdown",
+      "category": "knowledge",
+      "upstream": {
+        "repository": "kepano/obsidian-skills",
+        "path": "skills/obsidian-markdown",
+        "commit": "3ccff5338ea700537839b21900aa5358a0402c98",
+        "fork": "xakCHDUT/obsidian-skills"
+      },
+      "license": "MIT",
+      "status": "file_checked_runtime_unverified",
+      "validation": {
+        "summary": "12 shared file checks passed; app rendering and formula execution unverified",
+        "report": "validation/knowledge/report.md"
+      }
+    },
+    {
+      "id": "obsidian-bases",
+      "category": "knowledge",
+      "upstream": {
+        "repository": "kepano/obsidian-skills",
+        "path": "skills/obsidian-bases",
+        "commit": "3ccff5338ea700537839b21900aa5358a0402c98",
+        "fork": "xakCHDUT/obsidian-skills"
+      },
+      "license": "MIT",
+      "status": "file_checked_runtime_unverified",
+      "validation": {
+        "summary": "12 shared file checks passed; app rendering and formula execution unverified",
+        "report": "validation/knowledge/report.md"
+      }
+    },
+    {
+      "id": "jupyter-notebook",
+      "category": "notebook",
+      "upstream": {
+        "repository": "openai/skills",
+        "path": "skills/.curated/jupyter-notebook",
+        "commit": "49f948faa9258a0c61caceaf225e179651397431",
+        "fork": "xakCHDUT/openai-skills"
+      },
+      "license": "Apache-2.0",
+      "status": "validated_selected_cases",
+      "validation": {
+        "summary": "17 CLI/schema/kernel checks passed",
+        "report": "skills/jupyter-notebook/validation/README.md"
+      }
+    }
+  ]
+}

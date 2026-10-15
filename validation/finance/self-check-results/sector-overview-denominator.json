@@ -1,0 +1,15 @@
+{
+  "synthetic": true,
+  "case_id": "sector-overview-known-denominator",
+  "evaluation_role": "author_self_check",
+  "market_size_2025": 968,
+  "cagr_2023_2025_pct": 10,
+  "year_intervals": 2,
+  "market_share_pct": {"A": 30.991735537190085, "B": 25.826446280991733, "C": null, "D": 10.330578512396695},
+  "sample_coverage_pct": 67.14876033057852,
+  "unassigned_market_revenue": 318,
+  "industry_leader": null,
+  "concentration_ratio": null,
+  "valuation_ranking": null,
+  "source_ids": ["A", "B", "C", "D", "MARKET"]
+}

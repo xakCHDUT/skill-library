@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "validated_date": "2026-10-15",
+  "skill": "statistical-analysis",
+  "status": "validated-for-documented-tested-scope",
+  "upstream": {
+    "repository": "K-Dense-AI/scientific-agent-skills",
+    "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+    "path": "skills/statistical-analysis",
+    "skill_url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/a1043ef544e3a100c28e70a736b6cf32554d0677/skills/statistical-analysis/SKILL.md",
+    "license": "MIT",
+    "license_url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/a1043ef544e3a100c28e70a736b6cf32554d0677/LICENSE.md"
+  },
+  "fork_revision": 1,
+  "environment": {
+    "os": "Windows",
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0",
+      "pingouin": "0.7.0",
+      "matplotlib": "3.11.2",
+      "h5py": "3.16.0",
+      "biopython": "1.88",
+      "pillow": "12.3.0",
+      "tifffile": "2026.9.20",
+      "polars": "1.44.2"
+    }
+  },
+  "original_tests": {
+    "test_cases": 32,
+    "passed": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "subtests_passed_separately": 9,
+    "counting_note": "Subtests are not added to the test-case pass count."
+  },
+  "final_tests": {
+    "test_cases": 33,
+    "passed": 33,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "subtests_passed_separately": 9,
+    "counting_note": "Subtests are not added to the test-case pass count."
+  },
+  "synthetic_data_only": true,
+  "network_calls_during_skill_execution": 0,
+  "paid_api_calls": 0,
+  "frontmatter_validation": "passed",
+  "source_review": {
+    "dynamic_execution": "none in reviewed skill scripts",
+    "network_code": "none in reviewed skill scripts",
+    "credentials_required": false
+  },
+  "changed_files": [
+    {
+      "path": "SKILL.md",
+      "upstream_git_blob": "4ea7453a12e63f0dbc31d7a47ed41fe3ff4c4c1a",
+      "fork_sha256": "8ec5d7f6142f5207a84b7c95782c22518f6177f5db1d6985223c531bc8c81c85"
+    }
+  ],
+  "limits": [
+    "Optional PyMC/ArviZ Bayesian workflow was not installed or sampled in this validation.",
+    "Diagnostic plots do not establish independence, causal validity or model adequacy."
+  ]
+}

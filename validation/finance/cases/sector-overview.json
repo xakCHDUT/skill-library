@@ -1,0 +1,19 @@
+{
+  "synthetic": true,
+  "case_id": "sector-overview-denominator-missing",
+  "scope": {"product": "industrial thermal controllers", "geography": "China domestic sales", "period": "FY2025", "financial_unit": "CNY million"},
+  "sources": {
+    "A": "Synthetic company A product-segment disclosure, FY2025: revenue 300; EBITDA 60; management claims fastest delivery, not independently verified.",
+    "B": "Synthetic company B disclosure, FY2025; all revenue is within scope: revenue 250; EBITDA 40; no customer-retention data.",
+    "C": "Synthetic conglomerate C disclosure, FY2025: group revenue 1000; group EBITDA 180. No controller-segment revenue or profit disclosed; group includes unrelated products.",
+    "D": "Synthetic specialist D disclosure, FY2025; all revenue is within scope: revenue 100; gross margin 30%; EBITDA not disclosed."
+  },
+  "companies": [
+    {"id": "A", "revenue": 300, "revenue_scope": "in_scope_segment", "ebitda": 60, "metric_basis": "reported"},
+    {"id": "B", "revenue": 250, "revenue_scope": "in_scope_total", "ebitda": 40, "metric_basis": "reported"},
+    {"id": "C", "revenue": 1000, "revenue_scope": "unrelated_group_total", "ebitda": 180, "metric_basis": "reported"},
+    {"id": "D", "revenue": 100, "revenue_scope": "in_scope_total", "gross_margin": 0.30, "ebitda": null, "metric_basis": "reported"}
+  ],
+  "unavailable": ["total_market_size", "previous_year_comparable_revenue", "market_prices", "enterprise_values", "forward_estimates", "market_leader", "concentration_ratio"],
+  "user_request": "Compare the supplied companies. Can their revenues establish market share, an industry leader, or valuation rankings? Explain what these data do support."
+}

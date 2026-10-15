@@ -1,0 +1,23 @@
+{
+  "synthetic": true,
+  "case_id": "model-update-quarterly",
+  "evaluation_role": "author_self_check",
+  "quarter_actual_comparison": {"revenue_delta": -20, "revenue_change_pct": -6.666666666666667, "ebitda_delta": -18, "ebitda_change_pct": -30, "ebitda_margin_change_pp": -5, "net_income_delta": -12, "net_income_change_pct": -40},
+  "new_forecast": {
+    "Q1": {"revenue": 250, "ebitda": 50, "net_income_attributable": 25, "classification": "reported_actual", "sources": ["OLD", "ACT"]},
+    "Q2": {"revenue": 280, "ebitda": 42, "net_income_attributable": 18, "classification": "reported_actual", "sources": ["ACT"]},
+    "Q3": {"revenue": 297, "ebitda": 53.46, "net_income_attributable": 24, "classification": "derived_from_explicit_assumptions", "sources": ["OLD", "ASSUMPTIONS"]},
+    "Q4": {"revenue": 351.5, "ebitda": 66.785, "net_income_attributable": 31, "classification": "derived_from_explicit_assumptions", "sources": ["OLD", "ASSUMPTIONS"]}
+  },
+  "annual": {
+    "old": {"revenue": 1250, "ebitda": 250, "net_income_attributable": 125, "eps": 1.25},
+    "new": {"revenue": 1178.5, "ebitda": 212.245, "net_income_attributable": 98, "eps": 0.98},
+    "change_pct": {"revenue": -5.72, "ebitda": -15.102, "net_income_attributable": -21.6, "eps": -21.6},
+    "new_ebitda_margin_pct": 18.009758167161646,
+    "margin_change_pp": -1.9902418328383549,
+    "within_provided_revenue_guidance": true
+  },
+  "valuation": {"method": "explicit_unchanged_pe_scenario", "multiple": 20, "old_implied_value_per_share": 25, "new_implied_value_per_share": 19.6, "value_change": -5.4, "current_price": null, "upside_pct": null, "dcf_value": null, "consensus_comparison": null, "investment_rating": null},
+  "fy2027_forecast": null,
+  "workbook_updated": false
+}

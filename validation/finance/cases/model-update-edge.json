@@ -1,0 +1,12 @@
+{
+  "synthetic": true,
+  "case_id": "model-update-zero-and-missing",
+  "company": "Boreal Instruments (fictional)",
+  "information_cutoff": "2026-08-15",
+  "units": {"financials": "CNY million"},
+  "source": "EDGE: synthetic quarter comparison on a consistent reported basis",
+  "old_quarter_estimate": {"revenue": 0, "net_income_attributable": -2},
+  "reported_quarter_actual": {"revenue": 5, "net_income_attributable": 1},
+  "unavailable": ["weighted_average_diluted_shares", "target_multiple", "current_share_price", "consensus", "future_quarters"],
+  "user_request": "Describe the earnings change and provide EPS, growth rates, and a target price only where the supplied evidence supports them. Do not invent inputs."
+}

@@ -1,0 +1,32 @@
+{
+  "synthetic": true,
+  "case_id": "model-update-quarterly",
+  "company": "Aster Components (fictional)",
+  "information_cutoff": "2026-08-15",
+  "units": {"financials": "CNY million", "shares": "million diluted shares", "eps": "CNY per share"},
+  "sources": {
+    "OLD": "Synthetic old forecast, dated 2026-05-01; all forecast figures use the same reported accounting basis.",
+    "ACT": "Synthetic Q2 release, dated 2026-08-15; Q1 and Q2 figures are reported actuals in this exercise.",
+    "ASSUMPTIONS": "Synthetic user-supplied revision instructions; these are assumptions, not company guidance.",
+    "GUIDANCE": "Synthetic Q2 release: FY2026 revenue guidance is 1150-1250; a forecast range, not an actual result."
+  },
+  "old_forecast": {
+    "Q1": {"revenue": 250, "ebitda": 50, "net_income_attributable": 25, "classification": "reported_actual"},
+    "Q2": {"revenue": 300, "ebitda": 60, "net_income_attributable": 30, "classification": "prior_estimate"},
+    "Q3": {"revenue": 330, "ebitda": 66, "net_income_attributable": 33, "classification": "prior_estimate"},
+    "Q4": {"revenue": 370, "ebitda": 74, "net_income_attributable": 37, "classification": "prior_estimate"}
+  },
+  "new_actuals": {"Q2": {"revenue": 280, "ebitda": 42, "net_income_attributable": 18}},
+  "explicit_assumptions": {
+    "Q3_revenue_change_from_old": -0.10,
+    "Q4_revenue_change_from_old": -0.05,
+    "Q3_ebitda_margin": 0.18,
+    "Q4_ebitda_margin": 0.19,
+    "Q3_net_income_attributable": 24,
+    "Q4_net_income_attributable": 31,
+    "fy_weighted_average_diluted_shares_old_and_new": 100,
+    "unchanged_pe_scenario_multiple": 20
+  },
+  "reported_balance_sheet": {"cash": 180, "debt": 60},
+  "unavailable": ["current_share_price", "consensus_eps", "fy2027_forecast", "dcf_cash_flows_and_discount_rate", "prior_investment_rating"]
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-15",
+  "skill": "defuddle",
+  "upstream_skill_commit": "3ccff5338ea700537839b21900aa5358a0402c98",
+  "runtime": {
+    "node": "24.19.0",
+    "defuddle": "0.19.5",
+    "linkedom": "0.18.12"
+  },
+  "status": "passed",
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "checks": [
+    "Chinese body, numbers and metadata preserved",
+    "Navigation and advertisements removed",
+    "Relative article link resolved",
+    "Markdown generated without executing HTML script",
+    "Existing output preserved byte for byte",
+    "Input equals output preserves source",
+    "URL input rejected by local adapter",
+    "Empty X page does not invoke fetch fallback"
+  ],
+  "scope": "synthetic local HTML only; no live website acceptance test",
+  "global_install": false,
+  "private_data_used": false
+}

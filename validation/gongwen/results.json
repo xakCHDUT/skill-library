@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-15",
+  "scope": "Adapter-author executable regression checks, separate from semantic review and independent agent evaluation",
+  "passed": 23,
+  "total": 23,
+  "checks": [
+    {
+      "name": "request export",
+      "passed": true
+    },
+    {
+      "name": "request ZIP and XML",
+      "passed": true
+    },
+    {
+      "name": "request editable Title",
+      "passed": true
+    },
+    {
+      "name": "report export",
+      "passed": true
+    },
+    {
+      "name": "report ZIP and XML",
+      "passed": true
+    },
+    {
+      "name": "report editable Title",
+      "passed": true
+    },
+    {
+      "name": "repair-request export",
+      "passed": true
+    },
+    {
+      "name": "repair-request ZIP and XML",
+      "passed": true
+    },
+    {
+      "name": "repair-request editable Title",
+      "passed": true
+    },
+    {
+      "name": "school-notice export",
+      "passed": true
+    },
+    {
+      "name": "school-notice ZIP and XML",
+      "passed": true
+    },
+    {
+      "name": "school-notice editable Title",
+      "passed": true
+    },
+    {
+      "name": "existing output refused and retained",
+      "passed": true
+    },
+    {
+      "name": "explicit overwrite produces valid ZIP",
+      "passed": true
+    },
+    {
+      "name": "input path retained",
+      "passed": true
+    },
+    {
+      "name": "input same path retained with docx suffix",
+      "passed": true
+    },
+    {
+      "name": "wrong output extension rejected",
+      "passed": true
+    },
+    {
+      "name": "missing input creates no output",
+      "passed": true
+    },
+    {
+      "name": "empty input creates no output",
+      "passed": true
+    },
+    {
+      "name": "unknown document type rejected",
+      "passed": true
+    },
+    {
+      "name": "preexisting tmp sibling retained",
+      "passed": true
+    },
+    {
+      "name": "all 22 document metadata load",
+      "passed": true
+    },
+    {
+      "name": "mid-package failure preserves old output",
+      "passed": true
+    }
+  ],
+  "upstream_reproduction": {
+    "input_overwritten_by_docx": true,
+    "existing_output_replaced_without_opt_in": true
+  },
+  "not_tested": [
+    "POSIX no-clobber branch",
+    "Windows symlink and hardlink alias paths",
+    "all 22 document kinds as authored documents",
+    "formal GB/T conformity",
+    "digital signatures and seal layout"
+  ]
+}

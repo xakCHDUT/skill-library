@@ -1,0 +1,4 @@
+interface:
+  display_name: "NSFC 本子把脉"
+  short_description: "审查已有国自然申请书的科学问题、证据与方案逻辑，给出分级修改建议"
+  default_prompt: "使用 $nsfc-benzi-audit 审查我提供的国自然申请书，区分已证实的问题与待核实事项，给出最小修改建议。"

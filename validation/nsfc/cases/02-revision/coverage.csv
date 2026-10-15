@@ -1,0 +1,5 @@
+question,task,validation
+Q1,T1,conditional_error_distribution
+Q1,T2,model_calibration
+Q2,T2,model_calibration
+Q2,T3,held_out_strength_coverage

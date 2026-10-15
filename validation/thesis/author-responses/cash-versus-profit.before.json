@@ -1,0 +1,74 @@
+{
+  "company": "合成案例甲：岭山设备（虚构，无证券代码）",
+  "synthetic": true,
+  "baseline": {
+    "created_at": "2026-02-15",
+    "information_cutoff": "2026-02-15",
+    "position": "watchlist",
+    "thesis": "收入增长可转化为现金，备货保持克制，支持盈利增长具有持续性。",
+    "conviction": "medium",
+    "pillars": [
+      {
+        "id": "P1",
+        "claim": "收入延续增长",
+        "expectation": "2026 Q1 revenue YoY >= 15%",
+        "source_ids": [
+          "A-THESIS",
+          "A-PRIOR"
+        ]
+      },
+      {
+        "id": "P2",
+        "claim": "利润转化为现金",
+        "expectation": "2026 Q1 operating cash flow / net profit >= 1.0",
+        "source_ids": [
+          "A-THESIS",
+          "A-PRIOR"
+        ]
+      },
+      {
+        "id": "P3",
+        "claim": "库存占用克制",
+        "expectation": "2026-03-31 inventory YoY <= 10%",
+        "source_ids": [
+          "A-THESIS",
+          "A-PRIOR"
+        ]
+      }
+    ],
+    "forecasts": [
+      {
+        "period": "2026 Q1",
+        "unit": "CNY million",
+        "values": {
+          "revenue": 120,
+          "net_profit": 13,
+          "operating_cash_flow": 13
+        },
+        "source_id": "A-THESIS"
+      }
+    ],
+    "risks": [
+      "利润不能回款",
+      "库存积压或增长超过需求"
+    ],
+    "valuation": null
+  },
+  "updates": [],
+  "sources": [
+    {
+      "id": "A-PRIOR",
+      "title": "Fictional 2025 Q1 disclosure",
+      "published_at": "2025-04-25",
+      "locator": "prior_year fields",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "A-THESIS",
+      "title": "Fictional original research note",
+      "published_at": "2026-02-15",
+      "locator": "original_forecast and baseline",
+      "origin": "synthetic_supplied_case"
+    }
+  ]
+}

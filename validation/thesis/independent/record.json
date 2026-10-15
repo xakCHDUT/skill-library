@@ -1,0 +1,95 @@
+{
+  "company": "示例工业乙",
+  "ticker": null,
+  "synthetic": true,
+  "record_created_at": "2026-10-15",
+  "replay_information_cutoff": "2026-08-20",
+  "baseline": {
+    "created_at": "2026-05-10",
+    "information_cutoff": null,
+    "information_cutoff_reason": "S1 未另行说明信息截止日；不把编制日冒充已知截止日。",
+    "thesis": "二季度将完成经营性扭亏，增长可转成现金。",
+    "conviction": "中",
+    "conviction_reason": null,
+    "pillars": [
+      {"id": "P1", "claim": "经营性扭亏", "expectation": "2026 Q2 扣除一次性项目后的净利润应为正", "period": "2026 Q2", "metric": "net_profit_after_nonrecurring_items", "operator": ">", "threshold": 0, "unit": "CNY_million", "source_ids": ["S1"], "locator": "S1 P1"},
+      {"id": "P2", "claim": "增长可转成现金", "expectation": "2026 Q2 经营现金流不低于归母净利润", "period": "2026 Q2", "metric": "operating_cash_flow_minus_parent_net_profit", "operator": ">=", "threshold": 0, "unit": "CNY_million", "source_ids": ["S1"], "locator": "S1 P2"}
+    ],
+    "forecasts": [
+      {"metric": "revenue", "period": "2026 Q2", "value": 300, "unit": "CNY_million", "forecast_date": "2026-05-10", "source_id": "S1", "locator": "原预测：收入"},
+      {"metric": "parent_net_profit", "period": "2026 Q2", "value": 25, "unit": "CNY_million", "forecast_date": "2026-05-10", "source_id": "S1", "locator": "原预测：归母净利润"},
+      {"metric": "gross_margin", "period": "2026 Q2", "value": 20, "unit": "percent", "forecast_date": "2026-05-10", "source_id": "S1", "locator": "原预测：毛利率"}
+    ],
+    "risks": null,
+    "risks_reason": "S1 未提供风险清单。",
+    "catalysts": null,
+    "catalysts_reason": "S1 未提供催化剂日历。",
+    "valuation": null,
+    "target_price": null,
+    "position": null
+  },
+  "updates": [
+    {
+      "id": "U1",
+      "recorded_at": "2026-10-15",
+      "information_cutoff": "2026-08-20",
+      "mode": "historical_replay",
+      "evidence": [
+        {"id": "E1", "event_date": null, "event_date_reason": "季度数据只提供报告期间。", "published_at": "2026-08-18", "added_at": "2026-10-15", "source_id": "S2", "locator": "收入行", "type": "reported_actual", "period": "2026 Q2", "comparative_period": "2025 Q2", "unit": "CNY_million", "accounting_definition": "披露收入", "actual": 330, "prior_year": 300, "fact": "收入330，上年同期300。", "pillar_ids": ["P2"], "assessment": "收入支持增长背景，但不能证明现金转换。"},
+        {"id": "E2", "event_date": null, "event_date_reason": "季度数据只提供报告期间。", "published_at": "2026-08-18", "added_at": "2026-10-15", "source_id": "S2", "locator": "归母净利润行及非经常性损益行", "type": "reported_actual", "period": "2026 Q2", "comparative_period": "2025 Q2", "unit": "CNY_million", "accounting_definition": "归母净利润；非经常性贡献为税后且归属口径一致", "parent_net_profit": 33, "prior_year_parent_net_profit": -5, "nonrecurring_contribution": 40, "fact": "归母净利润33，上年同期-5；本季非经常性贡献40。", "pillar_ids": ["P1"], "assessment": "扣除一次性贡献后为-7，证伪经营性扭亏条件。"},
+        {"id": "E3", "event_date": null, "event_date_reason": "季度数据只提供报告期间。", "published_at": "2026-08-18", "added_at": "2026-10-15", "source_id": "S2", "locator": "经营活动现金净流量行", "type": "reported_actual", "period": "2026 Q2", "unit": "CNY_million", "accounting_definition": "经营活动现金净流量", "actual": -12, "fact": "经营活动现金净流量-12，低于同期归母净利润33。", "pillar_ids": ["P2"], "assessment": "Refuted"},
+        {"id": "E4", "event_date": null, "event_date_reason": "季度数据只提供报告期间。", "published_at": "2026-08-18", "added_at": "2026-10-15", "source_id": "S2", "locator": "毛利率行", "type": "reported_actual", "period": "2026 Q2", "comparative_period": "2025 Q2", "unit": "percent", "accounting_definition": "披露毛利率", "actual": 19, "prior_year": 21, "fact": "毛利率19%，上年同期21%。", "pillar_ids": ["P1"], "assessment": "提供额外不利背景，非S1独立失效阈值。"},
+        {"id": "E5", "event_date": null, "published_at": "2026-08-18", "added_at": "2026-10-15", "source_id": "S2", "locator": "公司回款表述", "type": "company_qualitative_guidance", "period": null, "unit": null, "fact": "公司称回款将改善，但未给金额或日期。", "pillar_ids": ["P2"], "assessment": "Unresolved；不能抵消已披露的Q2失败。"},
+        {"id": "E6", "event_date": null, "event_date_reason": "涨幅对应的具体起止日期未知。", "published_at": "2026-08-19", "publication_date_basis": "任务给出的市场材料日期，非已核验公告日期。", "added_at": "2026-10-15", "source_id": "S3", "locator": "用户转述股价行", "type": "unverified_user_report", "period": "较上月，确切起止日未知", "unit": "percent", "reported_change": 30, "fact": "用户转述股价较上月涨30%，无价格或可核验行情。", "pillar_ids": [], "used_in_operating_conclusion": false}
+      ],
+      "comparisons": [
+        {"id": "C1", "metric": "revenue", "comparison": "year_on_year", "actual": 330, "baseline": 300, "actual_period": "2026 Q2", "baseline_period": "2025 Q2", "absolute_difference": 30, "relative_difference_percent": 10, "unit": "CNY_million", "formula": "330-300; (330/300-1)*100", "source_ids": ["S2"], "input_locators": ["S2 收入行"]},
+        {"id": "C2", "metric": "revenue", "comparison": "original_forecast", "actual": 330, "baseline": 300, "period": "2026 Q2", "absolute_difference": 30, "relative_difference_percent": 10, "unit": "CNY_million", "formula": "330-300; (330/300-1)*100", "source_ids": ["S1", "S2"], "input_locators": ["S1 原预测：收入", "S2 收入行"]},
+        {"id": "C3", "metric": "parent_net_profit", "comparison": "year_on_year", "actual": 33, "baseline": -5, "actual_period": "2026 Q2", "baseline_period": "2025 Q2", "absolute_difference": 38, "relative_difference_percent": null, "relative_difference_reason": "负基数；用增加38及由亏转盈描述。", "unit": "CNY_million", "formula": "33-(-5)", "source_ids": ["S2"], "input_locators": ["S2 归母净利润行"]},
+        {"id": "C4", "metric": "parent_net_profit", "comparison": "original_forecast", "actual": 33, "baseline": 25, "period": "2026 Q2", "absolute_difference": 8, "relative_difference_percent": 32, "unit": "CNY_million", "formula": "33-25; (33/25-1)*100", "source_ids": ["S1", "S2"], "input_locators": ["S1 原预测：归母净利润", "S2 归母净利润行"]},
+        {"id": "C5", "metric": "net_profit_after_nonrecurring_items", "comparison": "original_pillar_threshold", "parent_net_profit": 33, "nonrecurring_contribution": 40, "actual": -7, "baseline": 0, "required_operator": ">", "period": "2026 Q2", "absolute_difference": -7, "relative_difference_percent": null, "relative_difference_reason": "阈值为零；不计算百分比。达到零仍不满足为正。", "unit": "CNY_million", "formula": "33-40=-7; -7-0=-7", "source_ids": ["S1", "S2"], "input_locators": ["S1 P1", "S2 归母净利润行", "S2 非经常性损益行"]},
+        {"id": "C6", "metric": "operating_cash_flow", "comparison": "same_period_parent_net_profit", "actual": -12, "baseline": 33, "required_operator": ">=", "period": "2026 Q2", "absolute_difference": -45, "relative_difference_percent": null, "relative_difference_reason": "现金流和利润为不同指标，呈现门槛差额，不混作增长率。", "unit": "CNY_million", "formula": "-12-33=-45", "source_ids": ["S1", "S2"], "input_locators": ["S1 P2", "S2 经营活动现金净流量行", "S2 归母净利润行"]},
+        {"id": "C7", "metric": "gross_margin", "comparison": "year_on_year", "actual": 19, "baseline": 21, "actual_period": "2026 Q2", "baseline_period": "2025 Q2", "absolute_difference": -2, "difference_unit": "percentage_points", "relative_difference_percent": null, "relative_difference_reason": "率的变化使用百分点。", "unit": "percent", "formula": "19%-21%=-2 percentage_points", "source_ids": ["S2"], "input_locators": ["S2 毛利率行"]},
+        {"id": "C8", "metric": "gross_margin", "comparison": "original_forecast", "actual": 19, "baseline": 20, "period": "2026 Q2", "absolute_difference": -1, "difference_unit": "percentage_points", "relative_difference_percent": null, "relative_difference_reason": "率的变化使用百分点。", "unit": "percent", "formula": "19%-20%=-1 percentage_points", "source_ids": ["S1", "S2"], "input_locators": ["S1 原预测：毛利率", "S2 毛利率行"]}
+      ],
+      "scorecard": [
+        {"pillar_id": "P1", "original_expectation_date": "2026-05-10", "original_expectation": "2026 Q2 扣除一次性项目后的净利润>0", "status": "Refuted", "comparison_ids": ["C5"], "source_ids": ["S1", "S2"], "next_test": "复核后续同口径盈利及届时可用正式更正，追加记录，不覆盖历史。"},
+        {"pillar_id": "P2", "original_expectation_date": "2026-05-10", "original_expectation": "2026 Q2 经营现金流>=归母净利润", "status": "Refuted", "comparison_ids": ["C6"], "source_ids": ["S1", "S2"], "next_test": "检查后续季度经营现金流和同期归母净利润，并取得回款金额、日期和口径。"}
+      ],
+      "prior_conviction": "中",
+      "current_conviction": "低",
+      "conviction_subject": "原观点继续成立的信心",
+      "conviction_reason": "P1经营性扭亏条件及P2现金转换条件均失败。",
+      "research_status": "refuted",
+      "controlling_pillar": "P1",
+      "independently_failed_pillars": ["P2"],
+      "conclusion": "二季度收入和报告净利润超过原预测，但扣除一次性项目后仍亏损、经营现金流也低于归母净利润，初始经营观点已被证伪。",
+      "scope_limit": "仅证伪限定于2026 Q2的初始观点，不断言永久亏损或未来无法修复。",
+      "strongest_counterargument": "收入同比增长10%且较原预测高10%，报告归母净利润由亏转盈并较预测高32%；但扣除一次性贡献后为-7且现金流为-12，不能满足原支柱。",
+      "data_gaps": ["上年同期扣除一次性项目后的利润", "上年同期经营现金流", "非经常性损益构成及持续性", "现金流出与回款延迟的明细", "回款改善金额和日期", "可核验市价及市场涨幅起止日", "市场一致预期", "持仓约束"],
+      "next_tests": [
+        {"id": "N1", "recorded_at": "2026-10-15", "type": "new_prospective_research_condition", "event": "2026 Q3业绩披露发布后复核", "expected_date": null, "expected_date_reason": "未提供发布日期。", "period": "2026 Q3", "conditions": ["同口径扣除一次性项目后归母净利润>0", "经营现金流>=同期归母净利润", "核验回款金额、日期及口径"], "original_confirmation_thresholds": ["S1 P1：2026 Q2扣除一次性项目后净利润>0", "S1 P2：2026 Q2经营现金流>=归母净利润"], "threshold_provenance": "Q3观察条件为本次新增，非S1原始预测；原始Q2门槛保持不变。", "comparability_requirement": "使用单季可比数据；仅有累计数时取得可比累计输入后再计算单季数。", "interpretation": "满足新增条件可支持一个有新日期的新观点，不能倒改Q2观点失败的记录。"},
+        {"id": "N2", "recorded_at": "2026-10-15", "type": "conditional_correction_review", "event": "未来实际收到届时可用的正式更正", "expected_date": null, "conditions": ["注明新信息截止日", "引用更正来源及受影响的S2输入", "重算受影响比较并说明对结论的影响", "追加更正条目而非覆盖U1"], "uses_excluded_source_content": false}
+      ],
+      "scheduled_automation": false,
+      "portfolio_action": null,
+      "excluded_source_ids": ["S4"]
+    }
+  ],
+  "current_scorecard_ref": "updates[0].scorecard",
+  "sources": [
+    {"id": "S1", "title": "初始记录", "date": "2026-05-10", "published_at": null, "origin": "用户提供合成材料", "supplied_file": "work/skill-expansion/independent/thesis-task.md", "locator": "初始记录 S1", "use": "original_baseline", "included": true},
+    {"id": "S2", "title": "季度披露", "published_at": "2026-08-18", "reporting_period": "2026 Q2", "event_date": null, "origin": "用户提供合成材料", "supplied_file": "work/skill-expansion/independent/thesis-task.md", "locator": "季度披露 S2", "use": "reported_facts_and_company_guidance", "included": true},
+    {"id": "S3", "title": "市场材料", "date": "2026-08-19", "origin": "用户提供的未经核验转述，合成材料", "supplied_file": "work/skill-expansion/independent/thesis-task.md", "locator": "市场材料 S3", "use": "unverified_market_context_only", "included": true, "used_in_operating_conclusion": false},
+    {"id": "S4", "title": "更正稿", "published_at": "2026-09-01", "reporting_period": "2026 Q2", "origin": "用户提供合成材料", "supplied_file": "work/skill-expansion/independent/thesis-task.md", "locator": "更正稿 S4", "included": false, "excluded_reason": "发布日期晚于2026-08-20信息截止日，内容不进入本轮计算、评级或结论。"}
+  ],
+  "execution_scope": {
+    "instructions_read": ["outputs/skill-library-staging/skills/thesis-tracker/SKILL.md", "outputs/skill-library-staging/skills/thesis-tracker/references/record-format.md"],
+    "task_material_read": "work/skill-expansion/independent/thesis-task.md，S1至S4",
+    "network_used": false,
+    "trades_executed": false,
+    "skill_modified": false,
+    "author_answers_or_validation_directories_read": false,
+    "instruction_issues": ["未发现阻碍执行的问题。历史回放编制日和信息截止日分别保存；因示例未规定截止日后排除材料字段，为S4增加排除标志。"]
+  }
+}

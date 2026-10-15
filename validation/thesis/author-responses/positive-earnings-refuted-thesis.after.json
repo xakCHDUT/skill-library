@@ -1,0 +1,273 @@
+{
+  "company": "合成案例乙：晴川订阅（虚构，无证券代码）",
+  "synthetic": true,
+  "baseline": {
+    "created_at": "2026-02-20",
+    "information_cutoff": "2026-02-20",
+    "position": "watchlist",
+    "thesis": "高客户黏性支持订阅收入及核心利润持续增长；增长依靠持续经营业务。",
+    "conviction": "high",
+    "pillars": [
+      {
+        "id": "P1",
+        "claim": "订阅持续增长",
+        "expectation": "2026 Q1 recurring revenue YoY >= 10%",
+        "source_ids": [
+          "B-THESIS",
+          "B-PRIOR"
+        ]
+      },
+      {
+        "id": "P2",
+        "claim": "客户黏性稳固",
+        "expectation": "2026 Q1 gross customer retention >= 92%; below 92% invalidates the strong-retention pillar",
+        "source_ids": [
+          "B-THESIS",
+          "B-PRIOR"
+        ]
+      },
+      {
+        "id": "P3",
+        "claim": "核心盈利增长",
+        "expectation": "2026 Q1 core net profit YoY >= 10%",
+        "source_ids": [
+          "B-THESIS",
+          "B-PRIOR"
+        ]
+      }
+    ],
+    "forecasts": [
+      {
+        "period": "2026 Q1",
+        "unit": "CNY million",
+        "values": {
+          "revenue": 220,
+          "net_profit": 25,
+          "recurring_revenue": 198,
+          "core_net_profit": 25
+        },
+        "source_id": "B-THESIS"
+      }
+    ],
+    "risks": [
+      "关键客户流失",
+      "报告利润被一次性收入抬高"
+    ],
+    "valuation": null
+  },
+  "updates": [
+    {
+      "id": "B-U1",
+      "recorded_at": "2026-04-29",
+      "information_cutoff": "2026-04-29",
+      "evidence": [
+        {
+          "id": "B-E1",
+          "event_date": "2026-03-31",
+          "published_at": "2026-04-28",
+          "source_id": "B-NEW",
+          "locator": "actual and qualitative_actual",
+          "type": "reported_actual",
+          "period": "2026 Q1",
+          "fact": {
+            "revenue": 210,
+            "net_profit": 30,
+            "recurring_revenue": 180,
+            "core_net_profit": 18,
+            "after_tax_disposal_gain": 12,
+            "gross_customer_retention_percent": 84
+          },
+          "additional_fact": "截至2026-03-31，上一年贡献15%订阅收入的一家客户未续约；新客户收入恰好抵消其流失额。",
+          "pillar_ids": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        {
+          "id": "B-E2",
+          "event_date": "2026-04-29",
+          "published_at": "2026-04-29",
+          "source_id": "B-MARKET",
+          "locator": "market_context",
+          "type": "market_context",
+          "period": "2026-02-19 to 2026-04-29",
+          "fact": {
+            "start_date": "2026-02-19",
+            "start_price": 40,
+            "end_date": "2026-04-29",
+            "end_price": 47.2,
+            "unit": "synthetic CNY per share",
+            "source_id": "B-MARKET"
+          },
+          "pillar_ids": []
+        }
+      ],
+      "comparisons": [
+        {
+          "metric": "revenue",
+          "unit": "CNY million",
+          "actual": 210,
+          "prior_year_actual": 200,
+          "original_forecast": 220,
+          "yoy_absolute": 10,
+          "yoy_percent": 5,
+          "forecast_difference_absolute": -10,
+          "forecast_difference_percent": -4.5454545455,
+          "actual_source_id": "B-NEW",
+          "prior_source_id": "B-PRIOR",
+          "forecast_source_id": "B-THESIS",
+          "period": "2026 Q1 vs 2025 Q1"
+        },
+        {
+          "metric": "net_profit",
+          "unit": "CNY million",
+          "actual": 30,
+          "prior_year_actual": 20,
+          "original_forecast": 25,
+          "yoy_absolute": 10,
+          "yoy_percent": 50,
+          "forecast_difference_absolute": 5,
+          "forecast_difference_percent": 20,
+          "actual_source_id": "B-NEW",
+          "prior_source_id": "B-PRIOR",
+          "forecast_source_id": "B-THESIS",
+          "period": "2026 Q1 vs 2025 Q1"
+        },
+        {
+          "metric": "recurring_revenue",
+          "unit": "CNY million",
+          "actual": 180,
+          "prior_year_actual": 180,
+          "original_forecast": 198,
+          "yoy_absolute": 0,
+          "yoy_percent": 0,
+          "forecast_difference_absolute": -18,
+          "forecast_difference_percent": -9.0909090909,
+          "actual_source_id": "B-NEW",
+          "prior_source_id": "B-PRIOR",
+          "forecast_source_id": "B-THESIS",
+          "period": "2026 Q1 vs 2025 Q1"
+        },
+        {
+          "metric": "core_net_profit",
+          "unit": "CNY million",
+          "actual": 18,
+          "prior_year_actual": 20,
+          "original_forecast": 25,
+          "yoy_absolute": -2,
+          "yoy_percent": -10,
+          "forecast_difference_absolute": -7,
+          "forecast_difference_percent": -28,
+          "actual_source_id": "B-NEW",
+          "prior_source_id": "B-PRIOR",
+          "forecast_source_id": "B-THESIS",
+          "period": "2026 Q1 vs 2025 Q1"
+        },
+        {
+          "metric": "after_tax_disposal_gain",
+          "unit": "CNY million",
+          "actual": 12,
+          "prior_year_actual": 0,
+          "original_forecast": null,
+          "yoy_absolute": 12,
+          "yoy_percent": null,
+          "forecast_difference_absolute": null,
+          "forecast_difference_percent": null,
+          "yoy_percent_reason": "Prior-year zero; percent growth is undefined.",
+          "actual_source_id": "B-NEW",
+          "prior_source_id": "B-PRIOR",
+          "forecast_source_id": null,
+          "period": "2026 Q1 vs 2025 Q1"
+        }
+      ],
+      "derived": {
+        "gross_customer_retention_change_percentage_points": -11,
+        "retention_gap_to_threshold_percentage_points": -8,
+        "disposal_share_of_reported_net_profit_percent": 40,
+        "reported_profit_bridge": {
+          "core_net_profit": 18,
+          "after_tax_disposal_gain": 12,
+          "net_profit": 30
+        },
+        "market_price_change_percent": 18
+      },
+      "scorecard": [
+        {
+          "pillar_id": "P1",
+          "status": "weakened",
+          "evidence_ids": [
+            "B-E1"
+          ],
+          "reason": "订阅收入零增长，低于原10%增长门槛与198预测。"
+        },
+        {
+          "pillar_id": "P2",
+          "status": "refuted",
+          "evidence_ids": [
+            "B-E1"
+          ],
+          "reason": "客户留存率84%低于92%失效门槛，且关键客户未续约。"
+        },
+        {
+          "pillar_id": "P3",
+          "status": "weakened",
+          "evidence_ids": [
+            "B-E1"
+          ],
+          "reason": "核心净利润同比下降10%；一次性处置收益贡献报告净利润40%。"
+        }
+      ],
+      "prior_conviction": "high",
+      "current_conviction": "low",
+      "thesis_status": "refuted",
+      "conclusion": "净利润超预期，但一次性收益撑起增长；客户流失已击穿原先的高黏性增长逻辑。",
+      "strongest_supporting_evidence": "报告净利润同比增长50%、比原预测高20%；新客户收入抵消了流失客户收入。",
+      "strongest_disconfirming_evidence": "留存率84%触发原92%失效条件，订阅收入零增长、核心净利润下降10%。",
+      "data_gaps": [
+        "reasons for nonrenewal and replacement customer quality",
+        "next-quarter customer retention",
+        "valuation model"
+      ],
+      "valuation": null,
+      "investment_action": null,
+      "next_tests": [
+        {
+          "event": "下一次客户及财务披露",
+          "expected_date": null,
+          "test": "核对流失原因、替代客户质量及持续核心利润；若建立新观点，应另建有日期的版本，不能降低旧门槛后宣布旧观点成立。"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "B-PRIOR",
+      "title": "Fictional 2025 Q1 disclosure",
+      "published_at": "2025-04-26",
+      "locator": "prior_year fields",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "B-THESIS",
+      "title": "Fictional original research note",
+      "published_at": "2026-02-20",
+      "locator": "original_forecast and baseline",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "B-NEW",
+      "title": "Fictional 2026 Q1 disclosure and customer update",
+      "published_at": "2026-04-28",
+      "locator": "actual fields",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "B-MARKET",
+      "title": "Fictional market context",
+      "published_at": "2026-04-29",
+      "locator": "market_context fields",
+      "origin": "synthetic_supplied_case"
+    }
+  ]
+}

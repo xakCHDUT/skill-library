@@ -1,0 +1,75 @@
+{
+  "company": "合成案例乙：晴川订阅（虚构，无证券代码）",
+  "synthetic": true,
+  "baseline": {
+    "created_at": "2026-02-20",
+    "information_cutoff": "2026-02-20",
+    "position": "watchlist",
+    "thesis": "高客户黏性支持订阅收入及核心利润持续增长；增长依靠持续经营业务。",
+    "conviction": "high",
+    "pillars": [
+      {
+        "id": "P1",
+        "claim": "订阅持续增长",
+        "expectation": "2026 Q1 recurring revenue YoY >= 10%",
+        "source_ids": [
+          "B-THESIS",
+          "B-PRIOR"
+        ]
+      },
+      {
+        "id": "P2",
+        "claim": "客户黏性稳固",
+        "expectation": "2026 Q1 gross customer retention >= 92%; below 92% invalidates the strong-retention pillar",
+        "source_ids": [
+          "B-THESIS",
+          "B-PRIOR"
+        ]
+      },
+      {
+        "id": "P3",
+        "claim": "核心盈利增长",
+        "expectation": "2026 Q1 core net profit YoY >= 10%",
+        "source_ids": [
+          "B-THESIS",
+          "B-PRIOR"
+        ]
+      }
+    ],
+    "forecasts": [
+      {
+        "period": "2026 Q1",
+        "unit": "CNY million",
+        "values": {
+          "revenue": 220,
+          "net_profit": 25,
+          "recurring_revenue": 198,
+          "core_net_profit": 25
+        },
+        "source_id": "B-THESIS"
+      }
+    ],
+    "risks": [
+      "关键客户流失",
+      "报告利润被一次性收入抬高"
+    ],
+    "valuation": null
+  },
+  "updates": [],
+  "sources": [
+    {
+      "id": "B-PRIOR",
+      "title": "Fictional 2025 Q1 disclosure",
+      "published_at": "2025-04-26",
+      "locator": "prior_year fields",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "B-THESIS",
+      "title": "Fictional original research note",
+      "published_at": "2026-02-20",
+      "locator": "original_forecast and baseline",
+      "origin": "synthetic_supplied_case"
+    }
+  ]
+}

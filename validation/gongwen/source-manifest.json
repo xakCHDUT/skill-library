@@ -1,0 +1,451 @@
+{
+  "repository": "zhaohui-yang/official-document-drafting",
+  "commit": "6b4166a50b96733684b36da6336ea85a847cf3be",
+  "retained_source_files": [
+    {
+      "upstream_path": "LICENSE",
+      "package_path": "LICENSE",
+      "sha256": "2d8ba6968842d2d058a2f1f02f8a5252603e32124d79b684edf2ca119acd6a38",
+      "adapted_sha256": "2d8ba6968842d2d058a2f1f02f8a5252603e32124d79b684edf2ca119acd6a38"
+    },
+    {
+      "upstream_path": "dist/skill/references/core-事实核验与防编造.md",
+      "package_path": "references/core-事实核验与防编造.md",
+      "sha256": "c3d6e3a188b19327df95e983d1af085e97ffa30b025ad4c28578cf3f73d6b83a",
+      "adapted_sha256": "eb6f20d6b3e127156cf12df21ee7868b25528c7a7ef2d56d6a5d78c58b81e881"
+    },
+    {
+      "upstream_path": "dist/skill/references/core-处理流程.md",
+      "package_path": "references/core-处理流程.md",
+      "sha256": "62b99cf71a9e42b92bad6d2a09ccc9f6b03447cb7d98991dc9729d8219ec1a09",
+      "adapted_sha256": "8177a9026a2d9593f97237591d2a7c9700becab23f3f103160dccc6c03367f94"
+    },
+    {
+      "upstream_path": "dist/skill/references/core-撰写思路与语域.md",
+      "package_path": "references/core-撰写思路与语域.md",
+      "sha256": "a0373207262c86c6b0b2f969f460e3514a34da3b20932d95f8e3b6fd47256568",
+      "adapted_sha256": "83206f6414d280683ec8e846550457d8979ccebf41b868952d121c35bc7ae345"
+    },
+    {
+      "upstream_path": "dist/skill/references/core-政策边界.md",
+      "package_path": "references/core-政策边界.md",
+      "sha256": "61d6c37606090f4f9be742124297e70904acb782da8853d11a62ef3fb9f0fa46",
+      "adapted_sha256": "f638853bf6c05323f31f14cc4dca9443b96f0580d4c8c7e8654a89ecff5cf9dd"
+    },
+    {
+      "upstream_path": "dist/skill/references/core-版式与导出.md",
+      "package_path": "references/core-版式与导出.md",
+      "sha256": "bb26f5fac73d3e61a42067deb6c6314ac59d34bd4da51a112979084788a0b791",
+      "adapted_sha256": "fd7442173a811b5e84c32348d9c4012c34746df28b19d91e39a52de401a385db"
+    },
+    {
+      "upstream_path": "dist/skill/references/core-语言与输出.md",
+      "package_path": "references/core-语言与输出.md",
+      "sha256": "952892321bf5571b9a50091f4969e63097b04e59b347459ead42e74367e27c29",
+      "adapted_sha256": "9e2d940afa1030052186b38d0fa309159df22a7159e1035fe92ac674274a71c2"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-公告.md",
+      "package_path": "references/文种-公告.md",
+      "sha256": "f1b51067cd8810f271f5a7ec13584c81d84b54a71bf241c60c371dc2c93459d8",
+      "adapted_sha256": "9b722b9f461e6dbc9a6c16642cad70a50c97303e61c39f29b0859659b59db6f9"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-公报.md",
+      "package_path": "references/文种-公报.md",
+      "sha256": "e6a35fd429377b7ecbecc2c8fb61f4b8587fedf246fb658ea6ec9b081762a09f",
+      "adapted_sha256": "366727f6064a376a6f7dab39ecce01cdbe91d167e0146087417a194205dd160b"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-决定.md",
+      "package_path": "references/文种-决定.md",
+      "sha256": "8d8db6447761f11b9c16a88176316e952e7c30a7ce9f91b0798882b203b39476",
+      "adapted_sha256": "cb009619484aa5b6413d2c6081428ca279d124f6b9302fedea884cc4e55cb884"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-决议.md",
+      "package_path": "references/文种-决议.md",
+      "sha256": "5cdc172c58668e22a8be4366a0f2485dc9727db37e7393d758241a4450c47c2d",
+      "adapted_sha256": "6d0f5a5469ca784eb54f895b93f1e4168dd411bd9ea2de6ef5e8fe251b29baa2"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-函.md",
+      "package_path": "references/文种-函.md",
+      "sha256": "26e0ebb280ae16e356a62aa244daa534faf05d1fb4d679deb976af509ec0dab2",
+      "adapted_sha256": "badced1a2f9cf1b642dc749e363463b5061b75fd793202d92228acc3d089b73f"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-命令（令）.md",
+      "package_path": "references/文种-命令（令）.md",
+      "sha256": "b354528d0295aedf38e1e725319bab0145a9aeea788cfcbffcbb4836aa60ffc2",
+      "adapted_sha256": "36a65c24bd172e0dc5cd6b41b450ea96fb2efe83518ce971afa26e99a0662e36"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-回复函.md",
+      "package_path": "references/文种-回复函.md",
+      "sha256": "b9b6f6740d5eaeb88e7171639082bf5350d9de9a5d9eed89a293e1b091ead966",
+      "adapted_sha256": "c58250afab59d1853fa26cb7770c3f4d369ee345e9d120035c69e94d0c491f81"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-工作总结.md",
+      "package_path": "references/文种-工作总结.md",
+      "sha256": "27493acccbd011d365ae73c79360c24151ecea8fed289b9c3bb70710da8f2e29",
+      "adapted_sha256": "690e9528d700d9704320b07e7e4a5035ab8b9f2d7c4a0dee54cd7b67ce109c76"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-工作方案.md",
+      "package_path": "references/文种-工作方案.md",
+      "sha256": "44820cc7bdb7aee8f7fc3e9f715241a962a93e7bb1b1f2c6eb42adb9dcd01903",
+      "adapted_sha256": "279c3d8110594ffe6e3cc4574c8ec03cadc50acae99cab7e083b62c0425d6aab"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-情况专报.md",
+      "package_path": "references/文种-情况专报.md",
+      "sha256": "e96e0ee2a0757a627794dca4d95045983b5cb82a328434563f51f14cb388a142",
+      "adapted_sha256": "f40bde271131648b027811899cf353faf6ea17bffe443355dbf86c56f90caa8b"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-意见.md",
+      "package_path": "references/文种-意见.md",
+      "sha256": "8e83a680113a037693e2846ea33954c7c54e69548c9eb708bee8991ce958456c",
+      "adapted_sha256": "acd4d79caec7e8967ad72898e5740459aea995c0a1e3001790a44c18ecc04dc1"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-批复.md",
+      "package_path": "references/文种-批复.md",
+      "sha256": "33c1a0e44963774a48c4d870c500b865998edd65b599c54c05a1add3b2ba09a0",
+      "adapted_sha256": "e3d79d53e05076f5afdbd20da0113c28bc27f3e3f96674a63a321c09aa766ae9"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-报告.md",
+      "package_path": "references/文种-报告.md",
+      "sha256": "c736052d18b21c0b29cef38aa49c0da58e1cde647ec5f64b38800eec6c28263f",
+      "adapted_sha256": "c54387e6cf15d9c9331b7775b1c5bec4f6587cce224bbedb6b3b1dbb6e172940"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-汇报材料.md",
+      "package_path": "references/文种-汇报材料.md",
+      "sha256": "3ea59ea4c2b8c581cb2784e2c2cbb954534f85dbd5d4f26ca9fe35c46e080f59",
+      "adapted_sha256": "5d891550aa0624120044e7835a4ff97c913dcffafefbbddfc4fedf83740fb0fa"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-简报.md",
+      "package_path": "references/文种-简报.md",
+      "sha256": "47ff92550552c3aad0b8495b8b66ff9d5358bfcfcf7d245d83f2355fc5303976",
+      "adapted_sha256": "1354d7b57e0a409289404c8f9323fe6b7e50d86ae6257b42437ad2e2bd61f665"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-纪要.md",
+      "package_path": "references/文种-纪要.md",
+      "sha256": "447bce9e85c888c459d5e385b05b06301fa3facc3c792011a07cb2a014742ad6",
+      "adapted_sha256": "8b3840cb6772b6ce0e0aab9b1c1738cf561f68f062431938b9e8581ce70ba097"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-议案.md",
+      "package_path": "references/文种-议案.md",
+      "sha256": "d1aacf4aec843cef8ed3cba0dfed8fe9cbbf903f956dd6b0e187ce7fa2ff363e",
+      "adapted_sha256": "0318c42e7031ef992d819e6295da6284f12dd5c227dc530b92f64448fbaaafc0"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-讲话稿.md",
+      "package_path": "references/文种-讲话稿.md",
+      "sha256": "c4ba16e918beca5b9c70c6d2de7957b06d77d433bef471db227b7a5469e8e2ce",
+      "adapted_sha256": "a06ff23c82fd49e3c497f332f9eec7c4c2ad0342855b4772477633089e38e229"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-请示.md",
+      "package_path": "references/文种-请示.md",
+      "sha256": "6bb503c31818aebffe6522f96fb097233e8818aeaa7e74284aeb7d35ad559078",
+      "adapted_sha256": "116e3df38fceba45e8668171a687ce289fb3505f399a24be8e0b0170ebb30741"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-通告.md",
+      "package_path": "references/文种-通告.md",
+      "sha256": "613dc343eb48a455135133a7bd0ad00c2711e94eef3b06fe014b4f474e7e8217",
+      "adapted_sha256": "1d7e51f898b57152803975a75bebf9a102c0fa6d8df88c3edc889c449cb97781"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-通报.md",
+      "package_path": "references/文种-通报.md",
+      "sha256": "336cdf25ab338cdd94aedc1e1c1d9ca51a77a64e2cc7c14cbf840d5120892b33",
+      "adapted_sha256": "144e12d142a10eb1a016c6515b54c6c3ee49d6651d32619c692cca9b05c344e3"
+    },
+    {
+      "upstream_path": "dist/skill/references/文种-通知.md",
+      "package_path": "references/文种-通知.md",
+      "sha256": "146cde108f82055cac5d1e32fb948b0764fb2da3650cb9ff6e2f6c110397bcdc",
+      "adapted_sha256": "0c25fe54ae78e2bc985f461b4abb009c0e4707b345553ad730baf5934305d460"
+    },
+    {
+      "upstream_path": "src/docgen/cli.py",
+      "package_path": "src/docgen/cli.py",
+      "sha256": "aaf2b1d4b1a3cd175fffb6c1888864eb5695c21664c87a0184ee8bb05e636882",
+      "adapted_sha256": "00b4d2707a84a459ebf9d53f04c168135e88a02fd87e62e16c454822f1b97d63"
+    },
+    {
+      "upstream_path": "src/docgen/constants.py",
+      "package_path": "src/docgen/constants.py",
+      "sha256": "6939cb4360a93679842ed20ef648cf5acd839332e6e7bf894987b65cc7129100",
+      "adapted_sha256": "6939cb4360a93679842ed20ef648cf5acd839332e6e7bf894987b65cc7129100"
+    },
+    {
+      "upstream_path": "src/docgen/document.py",
+      "package_path": "src/docgen/document.py",
+      "sha256": "17980ef05e91f0a0f7d352c3a66578e847ce5748689a795a5454822f576d15f0",
+      "adapted_sha256": "d7d532e6ead7131acebce9a560a780e8fdeb7bfa3d310ea3460f89dceb2cb678"
+    },
+    {
+      "upstream_path": "src/docgen/images.py",
+      "package_path": "src/docgen/images.py",
+      "sha256": "88c1111a8a6016b9e78c86092bff19aaa83c3e2e291a8680b64d8981fe4b4c6c",
+      "adapted_sha256": "88c1111a8a6016b9e78c86092bff19aaa83c3e2e291a8680b64d8981fe4b4c6c"
+    },
+    {
+      "upstream_path": "src/docgen/markdown.py",
+      "package_path": "src/docgen/markdown.py",
+      "sha256": "a1e39858c7484469c5f800f4384d6438a0829a38476253c3213101cfa910ab2b",
+      "adapted_sha256": "a1e39858c7484469c5f800f4384d6438a0829a38476253c3213101cfa910ab2b"
+    },
+    {
+      "upstream_path": "src/docgen/models.py",
+      "package_path": "src/docgen/models.py",
+      "sha256": "d8cc438201226bfe865b4a8e4a3bb0a4a338fab8aab2ffdcc51cb3cfe674c23b",
+      "adapted_sha256": "d8cc438201226bfe865b4a8e4a3bb0a4a338fab8aab2ffdcc51cb3cfe674c23b"
+    },
+    {
+      "upstream_path": "src/docgen/oxml.py",
+      "package_path": "src/docgen/oxml.py",
+      "sha256": "52b7d929921a3174698e013433f9aab468202be1d9392db469262f71b7cb0ecc",
+      "adapted_sha256": "69087481624736ee7042e640448ee15e7689db294712c1c10f5eb83d8d047361"
+    },
+    {
+      "upstream_path": "src/docgen/package.py",
+      "package_path": "src/docgen/package.py",
+      "sha256": "b80d729eb012f65684c139254d1e372f7ae8744d912f0b6e715f68c3ec318a64",
+      "adapted_sha256": "b4ae832ec3e8e83882d73332841f638df326bf51aacef00e13d0d85735261c67"
+    },
+    {
+      "upstream_path": "src/docgen/pagination.py",
+      "package_path": "src/docgen/pagination.py",
+      "sha256": "c766ba42952f4a3beb9958c5426c63c432167d4888cdf4aa7baade15f8e72819",
+      "adapted_sha256": "c766ba42952f4a3beb9958c5426c63c432167d4888cdf4aa7baade15f8e72819"
+    },
+    {
+      "upstream_path": "src/docgen/sections.py",
+      "package_path": "src/docgen/sections.py",
+      "sha256": "641324ef5995e43333431c82b9ad8e5ea54bca01fe289240fa236d417d8f14a5",
+      "adapted_sha256": "7d6b22485642fbdeb029cc89cc89e9f38a53c8ed63aa591880d6549c92064f31"
+    },
+    {
+      "upstream_path": "src/docgen/settings.py",
+      "package_path": "src/docgen/settings.py",
+      "sha256": "a907e99289870db31e2f6d2d809896adbf79029e474db9bab864d623c9654c7b",
+      "adapted_sha256": "d750e539580d9ed592fa2fdbfbf9d11a31bd5a52fe4f2a219bd68366117ea774"
+    },
+    {
+      "upstream_path": "src/adapters/paths.py",
+      "package_path": "src/adapters/paths.py",
+      "sha256": "7fb1b2fe511b90de58335ecd10b378baf7e54914270c215b82ccebb6b3fa01f4",
+      "adapted_sha256": "7fb1b2fe511b90de58335ecd10b378baf7e54914270c215b82ccebb6b3fa01f4"
+    },
+    {
+      "upstream_path": "src/adapters/profiles.py",
+      "package_path": "src/adapters/profiles.py",
+      "sha256": "c4274c954a626b1904792b0c5b23f64e170ccbb4d0e1052953738cc1e3f6fba8",
+      "adapted_sha256": "c4274c954a626b1904792b0c5b23f64e170ccbb4d0e1052953738cc1e3f6fba8"
+    },
+    {
+      "upstream_path": "src/adapters/doc_types.py",
+      "package_path": "src/adapters/doc_types.py",
+      "sha256": "713924a3ebe074ffa5a96bb5049a69b99154cdbfba3ef237264c22f9f996db95",
+      "adapted_sha256": "4014d450b0d8d977086fd48ef40c76bdc6c2e548bdef0ebe99e245241603dc28"
+    },
+    {
+      "upstream_path": "prompts/font-profiles/internal-readable.toml",
+      "package_path": "prompts/font-profiles/internal-readable.toml",
+      "sha256": "6b1e51c77b7cf3b85056e13b2e977193127113ac723a8a3567cc8a38e78f05b5",
+      "adapted_sha256": "6b1e51c77b7cf3b85056e13b2e977193127113ac723a8a3567cc8a38e78f05b5"
+    },
+    {
+      "upstream_path": "prompts/font-profiles/official-standard.toml",
+      "package_path": "prompts/font-profiles/official-standard.toml",
+      "sha256": "56cdb41bfdb0723a0055e9abbe8be1a0b19636db8c6171002a7a402cf06b18cb",
+      "adapted_sha256": "56cdb41bfdb0723a0055e9abbe8be1a0b19636db8c6171002a7a402cf06b18cb"
+    },
+    {
+      "upstream_path": "prompts/font-profiles/speech-readable.toml",
+      "package_path": "prompts/font-profiles/speech-readable.toml",
+      "sha256": "7dc0adad84c58a9b13461e3b9419db30ed4d0b5134fe87e2d98aa8d85259d465",
+      "adapted_sha256": "7dc0adad84c58a9b13461e3b9419db30ed4d0b5134fe87e2d98aa8d85259d465"
+    },
+    {
+      "upstream_path": "prompts/layout-profiles/internal-readable.toml",
+      "package_path": "prompts/layout-profiles/internal-readable.toml",
+      "sha256": "22a572e0059fe597b2406cdbb72b2d93697a6f05abd42e2957b65c325a31305c",
+      "adapted_sha256": "22a572e0059fe597b2406cdbb72b2d93697a6f05abd42e2957b65c325a31305c"
+    },
+    {
+      "upstream_path": "prompts/layout-profiles/official-standard.toml",
+      "package_path": "prompts/layout-profiles/official-standard.toml",
+      "sha256": "c32e4d1ca577fe9e36d523279821a6829724d3e9b05c69436d7a12073a974548",
+      "adapted_sha256": "c32e4d1ca577fe9e36d523279821a6829724d3e9b05c69436d7a12073a974548"
+    },
+    {
+      "upstream_path": "prompts/layout-profiles/speech-readable.toml",
+      "package_path": "prompts/layout-profiles/speech-readable.toml",
+      "sha256": "15546e84b38f7468463958ea8823792ecf6a8b1f9d75c050f4ceb27219c4ec89",
+      "adapted_sha256": "15546e84b38f7468463958ea8823792ecf6a8b1f9d75c050f4ceb27219c4ec89"
+    },
+    {
+      "upstream_path": "prompts/doc-types/announcement-公告/meta.toml",
+      "package_path": "prompts/doc-types/announcement-公告/meta.toml",
+      "sha256": "b03c395ce910193635fb96863531a49cab2a348f3d4cb935582e1e853206b334",
+      "adapted_sha256": "b03c395ce910193635fb96863531a49cab2a348f3d4cb935582e1e853206b334"
+    },
+    {
+      "upstream_path": "prompts/doc-types/approval-批复/meta.toml",
+      "package_path": "prompts/doc-types/approval-批复/meta.toml",
+      "sha256": "490c998fcdc6a9f56c965b06dee4f2be4ac5ee6b885887469afabfd1dcff5d2f",
+      "adapted_sha256": "490c998fcdc6a9f56c965b06dee4f2be4ac5ee6b885887469afabfd1dcff5d2f"
+    },
+    {
+      "upstream_path": "prompts/doc-types/briefing-简报/meta.toml",
+      "package_path": "prompts/doc-types/briefing-简报/meta.toml",
+      "sha256": "7ad53e781044431e08163f2287faa25650d30e6c9c3200d2c40f62798622c014",
+      "adapted_sha256": "7ad53e781044431e08163f2287faa25650d30e6c9c3200d2c40f62798622c014"
+    },
+    {
+      "upstream_path": "prompts/doc-types/circular-通报/meta.toml",
+      "package_path": "prompts/doc-types/circular-通报/meta.toml",
+      "sha256": "0747d96aacb1c7f9be6973dc6f4e88afa98b0c45eb759bdbab0f559d1c97df1a",
+      "adapted_sha256": "0747d96aacb1c7f9be6973dc6f4e88afa98b0c45eb759bdbab0f559d1c97df1a"
+    },
+    {
+      "upstream_path": "prompts/doc-types/communique-公报/meta.toml",
+      "package_path": "prompts/doc-types/communique-公报/meta.toml",
+      "sha256": "ed872cf06b3bc1b460c30a63bf4ede1705166c44b973c274602502a5ec74b090",
+      "adapted_sha256": "ed872cf06b3bc1b460c30a63bf4ede1705166c44b973c274602502a5ec74b090"
+    },
+    {
+      "upstream_path": "prompts/doc-types/decision-决定/meta.toml",
+      "package_path": "prompts/doc-types/decision-决定/meta.toml",
+      "sha256": "41732f04e9417e7f55e2c71702f6b53363be60bc28abe80a62cecb173443897b",
+      "adapted_sha256": "41732f04e9417e7f55e2c71702f6b53363be60bc28abe80a62cecb173443897b"
+    },
+    {
+      "upstream_path": "prompts/doc-types/letter-函/meta.toml",
+      "package_path": "prompts/doc-types/letter-函/meta.toml",
+      "sha256": "c31919870988870b1442013bf9d279d2492cf153e4a88cee94807e60513ff6b0",
+      "adapted_sha256": "c31919870988870b1442013bf9d279d2492cf153e4a88cee94807e60513ff6b0"
+    },
+    {
+      "upstream_path": "prompts/doc-types/minutes-纪要/meta.toml",
+      "package_path": "prompts/doc-types/minutes-纪要/meta.toml",
+      "sha256": "e7c2b2d4686e1400ec6dcba8dd07f5524314580133d857c8b0c0e89153ec8ad3",
+      "adapted_sha256": "e7c2b2d4686e1400ec6dcba8dd07f5524314580133d857c8b0c0e89153ec8ad3"
+    },
+    {
+      "upstream_path": "prompts/doc-types/motion-议案/meta.toml",
+      "package_path": "prompts/doc-types/motion-议案/meta.toml",
+      "sha256": "677741334c501c303c896b2cb3bb01dec9c9ab86d65cf71f2840fe734da7f543",
+      "adapted_sha256": "677741334c501c303c896b2cb3bb01dec9c9ab86d65cf71f2840fe734da7f543"
+    },
+    {
+      "upstream_path": "prompts/doc-types/notice-通知/meta.toml",
+      "package_path": "prompts/doc-types/notice-通知/meta.toml",
+      "sha256": "002fb83f9b48c1d356b0c0bc2c3bb75a79b83ea67d758a382308c9904a7f6613",
+      "adapted_sha256": "002fb83f9b48c1d356b0c0bc2c3bb75a79b83ea67d758a382308c9904a7f6613"
+    },
+    {
+      "upstream_path": "prompts/doc-types/opinion-意见/meta.toml",
+      "package_path": "prompts/doc-types/opinion-意见/meta.toml",
+      "sha256": "d27d01b0f3de51807b4efe075e7c4ba66ac60e928bb0bdcf505c6f9228138bc3",
+      "adapted_sha256": "d27d01b0f3de51807b4efe075e7c4ba66ac60e928bb0bdcf505c6f9228138bc3"
+    },
+    {
+      "upstream_path": "prompts/doc-types/order-命令（令）/meta.toml",
+      "package_path": "prompts/doc-types/order-命令（令）/meta.toml",
+      "sha256": "2eb97035613de5815b42f9ef8a0da997079d07ff270cb48d8b859a4244ba7f6b",
+      "adapted_sha256": "2eb97035613de5815b42f9ef8a0da997079d07ff270cb48d8b859a4244ba7f6b"
+    },
+    {
+      "upstream_path": "prompts/doc-types/presentation-汇报材料/meta.toml",
+      "package_path": "prompts/doc-types/presentation-汇报材料/meta.toml",
+      "sha256": "e1d9db971e4ce1f6504b016029adb104a45fd7f4f092a6bce70d4e8b30a44f0e",
+      "adapted_sha256": "e1d9db971e4ce1f6504b016029adb104a45fd7f4f092a6bce70d4e8b30a44f0e"
+    },
+    {
+      "upstream_path": "prompts/doc-types/public-notice-通告/meta.toml",
+      "package_path": "prompts/doc-types/public-notice-通告/meta.toml",
+      "sha256": "2cce65a5815909dd127fb097053fb5f7ab32229b9cf1936df570b17991a022f3",
+      "adapted_sha256": "2cce65a5815909dd127fb097053fb5f7ab32229b9cf1936df570b17991a022f3"
+    },
+    {
+      "upstream_path": "prompts/doc-types/reply-回复函/meta.toml",
+      "package_path": "prompts/doc-types/reply-回复函/meta.toml",
+      "sha256": "0521fbe30909257c6d2633d1daf523acc5b4a8cecb19b736871f196bc3c3ae9d",
+      "adapted_sha256": "0521fbe30909257c6d2633d1daf523acc5b4a8cecb19b736871f196bc3c3ae9d"
+    },
+    {
+      "upstream_path": "prompts/doc-types/report-报告/meta.toml",
+      "package_path": "prompts/doc-types/report-报告/meta.toml",
+      "sha256": "f100c0a117957701760df9a68d2423c07c6f2b223e841e63cc4484b33f2f113a",
+      "adapted_sha256": "f100c0a117957701760df9a68d2423c07c6f2b223e841e63cc4484b33f2f113a"
+    },
+    {
+      "upstream_path": "prompts/doc-types/request-请示/meta.toml",
+      "package_path": "prompts/doc-types/request-请示/meta.toml",
+      "sha256": "b221a7de2e9806df7ff64db5d192de499cc7a05883df4cbe686f8e159c6b0b8f",
+      "adapted_sha256": "b221a7de2e9806df7ff64db5d192de499cc7a05883df4cbe686f8e159c6b0b8f"
+    },
+    {
+      "upstream_path": "prompts/doc-types/resolution-决议/meta.toml",
+      "package_path": "prompts/doc-types/resolution-决议/meta.toml",
+      "sha256": "8fb1ea2363c1d5285f45dacf854b896eee452fc3f80cdcd5f2c21700ab043f8d",
+      "adapted_sha256": "8fb1ea2363c1d5285f45dacf854b896eee452fc3f80cdcd5f2c21700ab043f8d"
+    },
+    {
+      "upstream_path": "prompts/doc-types/special-report-情况专报/meta.toml",
+      "package_path": "prompts/doc-types/special-report-情况专报/meta.toml",
+      "sha256": "2762eba05c58e5b9e012375e90cf573aa6db4170ea5b9e284247b154725cde7c",
+      "adapted_sha256": "2762eba05c58e5b9e012375e90cf573aa6db4170ea5b9e284247b154725cde7c"
+    },
+    {
+      "upstream_path": "prompts/doc-types/speech-讲话稿/meta.toml",
+      "package_path": "prompts/doc-types/speech-讲话稿/meta.toml",
+      "sha256": "73bbf8420bd3eee1aaff2cce74d827bb64dc65d4edc76838c70e309e86fb1fd5",
+      "adapted_sha256": "73bbf8420bd3eee1aaff2cce74d827bb64dc65d4edc76838c70e309e86fb1fd5"
+    },
+    {
+      "upstream_path": "prompts/doc-types/summary-工作总结/meta.toml",
+      "package_path": "prompts/doc-types/summary-工作总结/meta.toml",
+      "sha256": "954ca8fa353662c51f9ead827f5c5bb3e9d938a011bcad53b5aa1a48d2669ffe",
+      "adapted_sha256": "954ca8fa353662c51f9ead827f5c5bb3e9d938a011bcad53b5aa1a48d2669ffe"
+    },
+    {
+      "upstream_path": "prompts/doc-types/work-plan-工作方案/meta.toml",
+      "package_path": "prompts/doc-types/work-plan-工作方案/meta.toml",
+      "sha256": "812c11cbb38546822c25643c280493ed39dd056ec5bb9267bcfeed079429b4dc",
+      "adapted_sha256": "812c11cbb38546822c25643c280493ed39dd056ec5bb9267bcfeed079429b4dc"
+    },
+    {
+      "upstream_path": "assets/fonts/catalog.toml",
+      "package_path": "assets/fonts/catalog.toml",
+      "sha256": "5f0e2207bfc2356496cb5484e362a5c1dfe6a0da773b243e184caf11d29ad206",
+      "adapted_sha256": "27070c3e752002f2f87b022369490f850ae367f22af413760ba702fd6f5760f3"
+    },
+    {
+      "upstream_path": "assets/templates/draft-request.md",
+      "package_path": "assets/templates/draft-request.md",
+      "sha256": "3e5194fb59ad9fff47dfe429dfd72db1ae4021beddbd93c8d06ef8d75368ff63",
+      "adapted_sha256": "cb25d6b6bb88f3f305364213196eadbf3d2960cab229276e9caab1dbff3e2e14"
+    },
+    {
+      "upstream_path": "prompts/core/fallback-template.md",
+      "package_path": "references/fallback-template.md",
+      "sha256": "fa7a8c9f42fbc52ca8ceac31ea2853912efbcab76e6d90453af9eff1c15c8d2b",
+      "adapted_sha256": "814c04d5b3ee0a6a21aba41cb6a7f9a1d7d9e239bad21b6af8180fc43485b521"
+    }
+  ],
+  "package_file_count": 78
+}

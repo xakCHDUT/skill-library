@@ -1,0 +1,66 @@
+{
+  "company": "合成案例甲：岭山设备（虚构，无证券代码）",
+  "synthetic": true,
+  "request": "用原始观点更新季度跟踪记录，保留原文和预测，说明哪些新证据支持或削弱观点，并计算同比及预期差。不要另建估值。",
+  "unit": "CNY million",
+  "flow_period": "2026 Q1",
+  "stock_date": "2026-03-31",
+  "prior_flow_period": "2025 Q1",
+  "prior_stock_date": "2025-03-31",
+  "accounting_basis": "consolidated; net_profit and operating_cash_flow share the same entity scope",
+  "prior_year": {
+    "revenue": 100,
+    "net_profit": 10,
+    "operating_cash_flow": 12,
+    "inventory": 40
+  },
+  "original_forecast": {
+    "revenue": 120,
+    "net_profit": 13,
+    "operating_cash_flow": 13
+  },
+  "actual": {
+    "revenue": 125,
+    "net_profit": 15,
+    "operating_cash_flow": 3,
+    "inventory": 65
+  },
+  "thresholds": {
+    "revenue_yoy_min_percent": 15,
+    "cash_conversion_min_ratio": 1,
+    "inventory_yoy_max_percent": 10
+  },
+  "new_data_publication": "2026-04-27",
+  "recorded_at": "2026-04-28",
+  "information_cutoff": "2026-04-28",
+  "sources": [
+    {
+      "id": "A-PRIOR",
+      "title": "Fictional 2025 Q1 disclosure",
+      "published_at": "2025-04-25",
+      "locator": "prior_year fields",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "A-THESIS",
+      "title": "Fictional original research note",
+      "published_at": "2026-02-15",
+      "locator": "original_forecast and baseline",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "A-NEW",
+      "title": "Fictional 2026 Q1 disclosure",
+      "published_at": "2026-04-27",
+      "locator": "actual fields",
+      "origin": "synthetic_supplied_case"
+    }
+  ],
+  "unknowns": [
+    "inventory composition and aging",
+    "receivable aging",
+    "seasonality and next-quarter collections",
+    "market price",
+    "valuation"
+  ]
+}

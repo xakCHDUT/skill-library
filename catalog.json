@@ -145,6 +145,54 @@
         "summary": "19 file and negative-path checks plus 1 Windows Unicode-path regression passed; 3 Chinese synthetic slides rendered and visually reviewed; PowerPoint application editing unverified",
         "report": "validation/ppt/report.md"
       }
+    },
+    {
+      "id": "official-document-drafting",
+      "category": "writing",
+      "upstream": {
+        "repository": "zhaohui-yang/official-document-drafting",
+        "path": ".",
+        "commit": "6b4166a50b96733684b36da6336ea85a847cf3be",
+        "fork": "xakCHDUT/official-document-drafting"
+      },
+      "license": "MIT (original code and documents; no third-party fonts or binaries included)",
+      "status": "validated_selected_cases",
+      "validation": {
+        "summary": "23 export/protection checks passed; 3 author tasks produced 4 DOCX files opened and rendered with Word; 1 independent minutes exercise reviewed",
+        "report": "validation/gongwen/report.md"
+      }
+    },
+    {
+      "id": "nsfc-benzi-audit",
+      "category": "research",
+      "upstream": {
+        "repository": "jiankang1991/nsfc-benzi-audit",
+        "path": "nsfc-benzi-audit",
+        "commit": "9a6010b94a165473f3c4ad71a522b7957381ed5e",
+        "fork": "xakCHDUT/nsfc-benzi-audit"
+      },
+      "license": "MIT",
+      "status": "validated_selected_cases",
+      "validation": {
+        "summary": "8 upstream structural tests and 4 calculations passed; 2 author audits plus 1 independently executed revision-review case; text-only route",
+        "report": "validation/nsfc/report.md"
+      }
+    },
+    {
+      "id": "thesis-tracker",
+      "category": "finance",
+      "upstream": {
+        "repository": "anthropics/financial-services",
+        "path": "plugins/vertical-plugins/equity-research/skills/thesis-tracker",
+        "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+        "fork": "xakCHDUT/financial-services"
+      },
+      "license": "Apache-2.0",
+      "status": "validated_selected_cases",
+      "validation": {
+        "summary": "2 author cases with 47 self-checks; 1 independent historical case with 8 recomputed comparison rows; no market-return backtest",
+        "report": "validation/thesis/report.md"
+      }
     }
   ]
 }

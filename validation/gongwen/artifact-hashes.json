@@ -1,0 +1,34 @@
+[
+  {
+    "sample": "request",
+    "docx_sha256": "b120adf2b0ffccf6c733c8c49f5701e57975bcaa5fb9d226e8929da27dfee333",
+    "pdf_sha256": "875088295fecf65e24dc23be4230a4e3a90500c4708621f3e23af6062361b2c9",
+    "page_png_sha256": "d4b483161b5ee81b0a2ea914d2230083af732020a7515613544e86641c4b009e",
+    "pages": 1,
+    "visual_review": "pass; all pages inspected"
+  },
+  {
+    "sample": "report",
+    "docx_sha256": "2662117041d904385e75ccefbd17595ab9a024d2cc29774a6f954c14963ff7cb",
+    "pdf_sha256": "8ed91333620bb31ff143c55841bc103db6ce2e93690521a401dec05002e83b3b",
+    "page_png_sha256": "194d17eed3d6477438e3f4e3494ae29202fcc74aca44fd24422d5fc018e78903",
+    "pages": 1,
+    "visual_review": "pass; all pages inspected"
+  },
+  {
+    "sample": "repair-request",
+    "docx_sha256": "1d05cd189a6d8e7cb4545f0e59e8c1187b71c08c18e87305608de9eca4baf273",
+    "pdf_sha256": "286bbae8195bcae0bce150d938e9f2d85d08eaeeca304a688d975dfc7e15c667",
+    "page_png_sha256": "e6e832bfbfc04b3b7e2ba70e0d4d41ec65a7c4a16bb88430108ab4226f4c1d03",
+    "pages": 1,
+    "visual_review": "pass; all pages inspected"
+  },
+  {
+    "sample": "school-notice",
+    "docx_sha256": "d788bd86f90e564b4ed450b9c8af3b4ae3722f223b5e91e3d8fca4fdefeba7a4",
+    "pdf_sha256": "7a0b2d321dd4cc26f1bfba575c128b8cb7bc857b7340c26264cb7707f04b9fde",
+    "page_png_sha256": "0e7dff055d4ccc215404ecf975e1131644af5fa26d259c4d8d8a97ade3c49e1e",
+    "pages": 1,
+    "visual_review": "pass; all pages inspected"
+  }
+]

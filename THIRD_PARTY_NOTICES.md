@@ -5,9 +5,11 @@ This repository is a personal, independently maintained selection. It is not an 
 | Directories | Original author / source | Applicable license |
 |---|---|---|
 | `skills/exploratory-data-analysis`, `skills/statistical-analysis`, `skills/scientific-slides` | K-Dense AI, scientific-agent-skills | Each directory's MIT license file |
-| `skills/model-update`, `skills/sector-overview` | Anthropic, financial-services | Each directory's Apache-2.0 LICENSE |
+| `skills/model-update`, `skills/sector-overview`, `skills/thesis-tracker` | Anthropic, financial-services | Each directory's Apache-2.0 LICENSE |
 | `skills/defuddle`, `skills/obsidian-markdown`, `skills/obsidian-bases` | Steph Ango, obsidian-skills | Each directory's MIT LICENSE |
 | `skills/jupyter-notebook` | OpenAI, skills | Apache-2.0 LICENSE.txt |
+| `skills/official-document-drafting` | zhaohui-yang, official-document-drafting | Original code and documents under the retained MIT LICENSE; no third-party fonts or binaries are copied |
+| `skills/nsfc-benzi-audit` | jiankang1991, nsfc-benzi-audit | MIT LICENSE |
 
 Each `PROVENANCE.md` identifies the fixed source revision and local changes. Original notices remain in the copied files. Runtime packages referenced by lockfiles have their own licenses; installed third-party packages are not vendored here. The Defuddle package is from kepano/defuddle; its npm dependencies retain their package licenses upon installation.
 

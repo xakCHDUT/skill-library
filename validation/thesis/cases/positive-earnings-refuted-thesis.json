@@ -1,0 +1,83 @@
+{
+  "company": "合成案例乙：晴川订阅（虚构，无证券代码）",
+  "synthetic": true,
+  "request": "更新原先关于订阅增长与客户黏性的观点。新一期净利润超预期且股价上涨，检查原逻辑是否仍然成立，保留旧观点和门槛。",
+  "unit": "CNY million",
+  "flow_period": "2026 Q1",
+  "prior_flow_period": "2025 Q1",
+  "accounting_basis": "consolidated; core_net_profit + after-tax_disposal_gain = net_profit",
+  "prior_year": {
+    "revenue": 200,
+    "net_profit": 20,
+    "recurring_revenue": 180,
+    "core_net_profit": 20,
+    "after_tax_disposal_gain": 0,
+    "gross_customer_retention_percent": 95
+  },
+  "original_forecast": {
+    "revenue": 220,
+    "net_profit": 25,
+    "recurring_revenue": 198,
+    "core_net_profit": 25
+  },
+  "actual": {
+    "revenue": 210,
+    "net_profit": 30,
+    "recurring_revenue": 180,
+    "core_net_profit": 18,
+    "after_tax_disposal_gain": 12,
+    "gross_customer_retention_percent": 84
+  },
+  "thresholds": {
+    "recurring_revenue_yoy_min_percent": 10,
+    "gross_customer_retention_min_percent": 92,
+    "core_net_profit_yoy_min_percent": 10
+  },
+  "qualitative_actual": "截至2026-03-31，上一年贡献15%订阅收入的一家客户未续约；新客户收入恰好抵消其流失额。",
+  "market_context": {
+    "start_date": "2026-02-19",
+    "start_price": 40,
+    "end_date": "2026-04-29",
+    "end_price": 47.2,
+    "unit": "synthetic CNY per share",
+    "source_id": "B-MARKET"
+  },
+  "new_data_publication": "2026-04-28",
+  "recorded_at": "2026-04-29",
+  "information_cutoff": "2026-04-29",
+  "sources": [
+    {
+      "id": "B-PRIOR",
+      "title": "Fictional 2025 Q1 disclosure",
+      "published_at": "2025-04-26",
+      "locator": "prior_year fields",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "B-THESIS",
+      "title": "Fictional original research note",
+      "published_at": "2026-02-20",
+      "locator": "original_forecast and baseline",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "B-NEW",
+      "title": "Fictional 2026 Q1 disclosure and customer update",
+      "published_at": "2026-04-28",
+      "locator": "actual fields",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "B-MARKET",
+      "title": "Fictional market context",
+      "published_at": "2026-04-29",
+      "locator": "market_context fields",
+      "origin": "synthetic_supplied_case"
+    }
+  ],
+  "unknowns": [
+    "reasons for nonrenewal and replacement customer quality",
+    "next-quarter customer retention",
+    "valuation model"
+  ]
+}

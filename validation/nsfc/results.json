@@ -1,0 +1,56 @@
+{
+  "scope": "structure and evidence recomputation, not semantic review scoring",
+  "upstream_structural_unit_tests": {
+    "run": 8,
+    "passed": 8
+  },
+  "adapted_package_structure": {
+    "counts": {
+      "files": 16,
+      "markdown": 13,
+      "local_links": 0,
+      "json": 0,
+      "svg": 0
+    },
+    "errors": []
+  },
+  "synthetic_data_replays": [
+    {
+      "case": "01-network",
+      "distinct_days_table_total": 118,
+      "narrative_counts": [
+        100,
+        118
+      ],
+      "contradiction": true,
+      "does_not_establish_original_data_truth": true
+    },
+    {
+      "case": "01-network",
+      "training_and_test_years": [
+        "2024"
+      ],
+      "cross_year_validation": false
+    },
+    {
+      "case": "02-revision",
+      "pilot_runs": 18,
+      "matches_draft": true
+    },
+    {
+      "case": "02-revision",
+      "questions": [
+        "Q1",
+        "Q2"
+      ],
+      "tasks": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "all_questions_mapped_to_validation": true
+    }
+  ],
+  "author_semantic_self_reviews": 2,
+  "independence": "The semantic outputs were written by the adapting agent; not independently scored here."
+}

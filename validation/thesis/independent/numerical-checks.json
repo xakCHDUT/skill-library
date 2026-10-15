@@ -1,0 +1,135 @@
+{
+  "scope": "eight numeric comparison rows in one independent synthetic task",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "row": "C1",
+      "passed": true,
+      "recomputed": [
+        330,
+        300,
+        30,
+        10.000000000000009
+      ],
+      "captured": [
+        330,
+        300,
+        30,
+        10
+      ]
+    },
+    {
+      "row": "C2",
+      "passed": true,
+      "recomputed": [
+        330,
+        300,
+        30,
+        10.000000000000009
+      ],
+      "captured": [
+        330,
+        300,
+        30,
+        10
+      ]
+    },
+    {
+      "row": "C3",
+      "passed": true,
+      "recomputed": [
+        33,
+        -5,
+        38,
+        null
+      ],
+      "captured": [
+        33,
+        -5,
+        38,
+        null
+      ]
+    },
+    {
+      "row": "C4",
+      "passed": true,
+      "recomputed": [
+        33,
+        25,
+        8,
+        32.00000000000001
+      ],
+      "captured": [
+        33,
+        25,
+        8,
+        32
+      ]
+    },
+    {
+      "row": "C5",
+      "passed": true,
+      "recomputed": [
+        -7,
+        0,
+        -7,
+        null
+      ],
+      "captured": [
+        -7,
+        0,
+        -7,
+        null
+      ]
+    },
+    {
+      "row": "C6",
+      "passed": true,
+      "recomputed": [
+        -12,
+        33,
+        -45,
+        null
+      ],
+      "captured": [
+        -12,
+        33,
+        -45,
+        null
+      ]
+    },
+    {
+      "row": "C7",
+      "passed": true,
+      "recomputed": [
+        19,
+        21,
+        -2,
+        null
+      ],
+      "captured": [
+        19,
+        21,
+        -2,
+        null
+      ]
+    },
+    {
+      "row": "C8",
+      "passed": true,
+      "recomputed": [
+        19,
+        20,
+        -1,
+        null
+      ],
+      "captured": [
+        19,
+        20,
+        -1,
+        null
+      ]
+    }
+  ]
+}

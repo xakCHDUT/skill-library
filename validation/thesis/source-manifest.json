@@ -1,0 +1,23 @@
+{
+  "repository": "anthropics/financial-services",
+  "commit": "574ed3624aebd0418c7e96cd101262f30210ab26",
+  "retrieved_at": "2026-10-15",
+  "license": "Apache-2.0",
+  "root_notice_present": false,
+  "files": [
+    {
+      "source_path": "plugins/vertical-plugins/equity-research/skills/thesis-tracker/SKILL.md",
+      "snapshot": "upstream/SKILL.md",
+      "bytes": 2736,
+      "git_blob_sha1": "f9a3ce9187bdc3410d3f4f3713ce70a6f6b8f221",
+      "sha256": "6b4ce2967c5e01c6b42f5c140fa1e94dee2713b5d2de3eb71957ff5a5c11469b"
+    },
+    {
+      "source_path": "LICENSE",
+      "snapshot": "upstream/LICENSE",
+      "bytes": 11358,
+      "git_blob_sha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ]
+}

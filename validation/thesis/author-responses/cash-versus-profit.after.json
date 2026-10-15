@@ -1,0 +1,226 @@
+{
+  "company": "合成案例甲：岭山设备（虚构，无证券代码）",
+  "synthetic": true,
+  "baseline": {
+    "created_at": "2026-02-15",
+    "information_cutoff": "2026-02-15",
+    "position": "watchlist",
+    "thesis": "收入增长可转化为现金，备货保持克制，支持盈利增长具有持续性。",
+    "conviction": "medium",
+    "pillars": [
+      {
+        "id": "P1",
+        "claim": "收入延续增长",
+        "expectation": "2026 Q1 revenue YoY >= 15%",
+        "source_ids": [
+          "A-THESIS",
+          "A-PRIOR"
+        ]
+      },
+      {
+        "id": "P2",
+        "claim": "利润转化为现金",
+        "expectation": "2026 Q1 operating cash flow / net profit >= 1.0",
+        "source_ids": [
+          "A-THESIS",
+          "A-PRIOR"
+        ]
+      },
+      {
+        "id": "P3",
+        "claim": "库存占用克制",
+        "expectation": "2026-03-31 inventory YoY <= 10%",
+        "source_ids": [
+          "A-THESIS",
+          "A-PRIOR"
+        ]
+      }
+    ],
+    "forecasts": [
+      {
+        "period": "2026 Q1",
+        "unit": "CNY million",
+        "values": {
+          "revenue": 120,
+          "net_profit": 13,
+          "operating_cash_flow": 13
+        },
+        "source_id": "A-THESIS"
+      }
+    ],
+    "risks": [
+      "利润不能回款",
+      "库存积压或增长超过需求"
+    ],
+    "valuation": null
+  },
+  "updates": [
+    {
+      "id": "A-U1",
+      "recorded_at": "2026-04-28",
+      "information_cutoff": "2026-04-28",
+      "evidence": [
+        {
+          "id": "A-E1",
+          "event_date": "2026-03-31",
+          "published_at": "2026-04-27",
+          "source_id": "A-NEW",
+          "locator": "actual revenue, net_profit, operating_cash_flow, inventory",
+          "type": "reported_actual",
+          "period": "2026 Q1 flows; inventory at 2026-03-31",
+          "fact": {
+            "revenue": 125,
+            "net_profit": 15,
+            "operating_cash_flow": 3,
+            "inventory": 65
+          },
+          "pillar_ids": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "metric": "revenue",
+          "unit": "CNY million",
+          "actual": 125,
+          "prior_year_actual": 100,
+          "original_forecast": 120,
+          "yoy_absolute": 25,
+          "yoy_percent": 25,
+          "forecast_difference_absolute": 5,
+          "forecast_difference_percent": 4.1666666667,
+          "actual_source_id": "A-NEW",
+          "prior_source_id": "A-PRIOR",
+          "forecast_source_id": "A-THESIS",
+          "period": "2026 Q1 vs 2025 Q1"
+        },
+        {
+          "metric": "net_profit",
+          "unit": "CNY million",
+          "actual": 15,
+          "prior_year_actual": 10,
+          "original_forecast": 13,
+          "yoy_absolute": 5,
+          "yoy_percent": 50,
+          "forecast_difference_absolute": 2,
+          "forecast_difference_percent": 15.3846153846,
+          "actual_source_id": "A-NEW",
+          "prior_source_id": "A-PRIOR",
+          "forecast_source_id": "A-THESIS",
+          "period": "2026 Q1 vs 2025 Q1"
+        },
+        {
+          "metric": "operating_cash_flow",
+          "unit": "CNY million",
+          "actual": 3,
+          "prior_year_actual": 12,
+          "original_forecast": 13,
+          "yoy_absolute": -9,
+          "yoy_percent": -75,
+          "forecast_difference_absolute": -10,
+          "forecast_difference_percent": -76.9230769231,
+          "actual_source_id": "A-NEW",
+          "prior_source_id": "A-PRIOR",
+          "forecast_source_id": "A-THESIS",
+          "period": "2026 Q1 vs 2025 Q1"
+        },
+        {
+          "metric": "inventory",
+          "unit": "CNY million",
+          "actual": 65,
+          "prior_year_actual": 40,
+          "original_forecast": null,
+          "yoy_absolute": 25,
+          "yoy_percent": 62.5,
+          "forecast_difference_absolute": null,
+          "forecast_difference_percent": null,
+          "actual_source_id": "A-NEW",
+          "prior_source_id": "A-PRIOR",
+          "forecast_source_id": null,
+          "period": "2026-03-31 vs 2025-03-31"
+        }
+      ],
+      "derived": {
+        "cash_conversion_current": 0.2,
+        "cash_conversion_prior": 1.2,
+        "cash_conversion_change_percentage_points": -100,
+        "inventory_threshold_amount": 44,
+        "inventory_excess_above_threshold": 21
+      },
+      "scorecard": [
+        {
+          "pillar_id": "P1",
+          "status": "supported",
+          "evidence_ids": [
+            "A-E1"
+          ],
+          "reason": "收入同比25%，超过原15%门槛。"
+        },
+        {
+          "pillar_id": "P2",
+          "status": "weakened",
+          "evidence_ids": [
+            "A-E1"
+          ],
+          "reason": "现金转化率0.2，未达原1.0门槛；季节性解释未知。"
+        },
+        {
+          "pillar_id": "P3",
+          "status": "weakened",
+          "evidence_ids": [
+            "A-E1"
+          ],
+          "reason": "库存同比62.5%，超过原10%上限；性质和库龄未知。"
+        }
+      ],
+      "prior_conviction": "medium",
+      "current_conviction": "low",
+      "thesis_status": "weakened",
+      "conclusion": "利润长得快，现金跟不上：原先的现金型增长判断明显受损，库存去化与回款成为下一次验证重点。",
+      "strongest_supporting_evidence": "收入同比25%、净利润同比50%，分别比原预测高4.17%、15.38%。",
+      "strongest_disconfirming_evidence": "经营现金流同比下降75%，现金转化率0.2，库存同比增加62.5%。",
+      "data_gaps": [
+        "inventory composition and aging",
+        "receivable aging",
+        "seasonality and next-quarter collections",
+        "market price",
+        "valuation"
+      ],
+      "valuation": null,
+      "investment_action": null,
+      "next_tests": [
+        {
+          "event": "下一次财务披露及库存/回款解释",
+          "expected_date": null,
+          "test": "核对季节性、库龄、订单与回款；季度现金转化原门槛1.0仍保留，任何新门槛需另记日期及依据。"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "A-PRIOR",
+      "title": "Fictional 2025 Q1 disclosure",
+      "published_at": "2025-04-25",
+      "locator": "prior_year fields",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "A-THESIS",
+      "title": "Fictional original research note",
+      "published_at": "2026-02-15",
+      "locator": "original_forecast and baseline",
+      "origin": "synthetic_supplied_case"
+    },
+    {
+      "id": "A-NEW",
+      "title": "Fictional 2026 Q1 disclosure",
+      "published_at": "2026-04-27",
+      "locator": "actual fields",
+      "origin": "synthetic_supplied_case"
+    }
+  ]
+}

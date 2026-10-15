@@ -1,0 +1,3 @@
+set,year,days
+train,2024,80
+test,2024,38

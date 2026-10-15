@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-15",
+  "scope": "author_self_check",
+  "cases": 2,
+  "passed": 47,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "cash-versus-profit: synthetic company and values stay labeled",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: original thesis and forecasts unchanged",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: updates append without rewriting previous entries",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: sources retained without fabricated providers",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: evidence is available at the historical cutoff",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: actual evidence equals supplied raw facts",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: prior conviction kept and no unsupported valuation/action",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: unknowns remain explicit",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: revenue raw values and all comparisons recomputed",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: revenue period, units and sources traceable",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: net_profit raw values and all comparisons recomputed",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: net_profit period, units and sources traceable",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: operating_cash_flow raw values and all comparisons recomputed",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: operating_cash_flow period, units and sources traceable",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: inventory raw values and all comparisons recomputed",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: inventory period, units and sources traceable",
+      "passed": true
+    },
+    {
+      "name": "cash-versus-profit: every original pillar reviewed against relevant evidence",
+      "passed": true
+    },
+    {
+      "name": "cash case: cash conversion ratios and percentage-point decline",
+      "passed": true
+    },
+    {
+      "name": "cash case: inventory threshold remains an original limit, not an invented forecast",
+      "passed": true
+    },
+    {
+      "name": "cash case: mixed evidence weakens the overall view",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: synthetic company and values stay labeled",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: original thesis and forecasts unchanged",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: updates append without rewriting previous entries",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: sources retained without fabricated providers",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: evidence is available at the historical cutoff",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: actual evidence equals supplied raw facts",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: prior conviction kept and no unsupported valuation/action",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: unknowns remain explicit",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: revenue raw values and all comparisons recomputed",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: revenue period, units and sources traceable",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: net_profit raw values and all comparisons recomputed",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: net_profit period, units and sources traceable",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: recurring_revenue raw values and all comparisons recomputed",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: recurring_revenue period, units and sources traceable",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: core_net_profit raw values and all comparisons recomputed",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: core_net_profit period, units and sources traceable",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: after_tax_disposal_gain raw values and all comparisons recomputed",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: after_tax_disposal_gain period, units and sources traceable",
+      "passed": true
+    },
+    {
+      "name": "positive-earnings-refuted-thesis: every original pillar reviewed against relevant evidence",
+      "passed": true
+    },
+    {
+      "name": "refutation case: one-off and core profit reconcile",
+      "passed": true
+    },
+    {
+      "name": "refutation case: zero-baseline gain is absolute rather than infinite growth",
+      "passed": true
+    },
+    {
+      "name": "refutation case: retention changes are percentage points",
+      "passed": true
+    },
+    {
+      "name": "refutation case: price context is sourced but proves no operating pillar",
+      "passed": true
+    },
+    {
+      "name": "refutation case: invalidation outweighs near-term profit beat",
+      "passed": true
+    },
+    {
+      "name": "source: upstream/SKILL.md matches fixed upstream Git blob",
+      "passed": true
+    },
+    {
+      "name": "source: upstream/LICENSE matches fixed upstream Git blob",
+      "passed": true
+    },
+    {
+      "name": "license: staged license matches source byte for byte",
+      "passed": true
+    }
+  ],
+  "not_tested": [
+    "independent agent behavior",
+    "live company or market data",
+    "investment returns",
+    "broker execution",
+    "full portfolio workflow"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "repository": "jiankang1991/nsfc-benzi-audit",
+  "commit": "9a6010b94a165473f3c4ad71a522b7957381ed5e",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1086,
+      "git_blob_sha": "4fea7800b7d7e3f348a83102b7e8c3feb83c2c21",
+      "sha256": "575233c0a1c393169225d385b7b709960f5397dfb37c5bd7ad7db378f1544d8d"
+    },
+    {
+      "path": "nsfc-benzi-audit/LICENSE",
+      "bytes": 1086,
+      "git_blob_sha": "4fea7800b7d7e3f348a83102b7e8c3feb83c2c21",
+      "sha256": "575233c0a1c393169225d385b7b709960f5397dfb37c5bd7ad7db378f1544d8d"
+    },
+    {
+      "path": "nsfc-benzi-audit/SKILL.md",
+      "bytes": 10262,
+      "git_blob_sha": "dbb3dc1f1ec9823ac82777e9888f7c986599c81f",
+      "sha256": "078eb37a84cd27707ed679b4dab94a7c3090ac51b3f8204e577d6671431bd33c"
+    },
+    {
+      "path": "nsfc-benzi-audit/agents/openai.yaml",
+      "bytes": 273,
+      "git_blob_sha": "c7cf4c4e8756506c63ff1c5202c1c973f3c269a7",
+      "sha256": "4e49104bd18d26e2bbc0c5702a1f8495fb3b951a1a2c82c7d30e7892faa042c7"
+    },
+    {
+      "path": "nsfc-benzi-audit/assets/report-template.md",
+      "bytes": 5352,
+      "git_blob_sha": "29c60d7f913ab07943d8f6350b0fc39d7d66f385",
+      "sha256": "9b6ef377e36ff755798c721de02d57e4212bbd0717a3aba306fcefd8f16e6631"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/audit-surfaces.md",
+      "bytes": 19975,
+      "git_blob_sha": "ab02c7d8219a63e5269c74b6870a8ff8fd27943d",
+      "sha256": "dff7798d7aab73cba42fca5971e77114a361e24f1b9b43dc7a5925e2752af95a"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/benzi-logic.md",
+      "bytes": 44017,
+      "git_blob_sha": "836d17eff8b01d4e1d8276253b9fb836dd210d4c",
+      "sha256": "a315bb5f3208b91172be9a981dcbfe5c20e229fc2be862c98bcc5984a6f63934"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/current-rules.md",
+      "bytes": 7024,
+      "git_blob_sha": "7e9b32524121bb2cf6361bde6d85edc2d0db9a57",
+      "sha256": "4df97e55bb986621080e74de77ca910e5abe8e20820cca4629ae3df0590daffa"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/exemplar-learning.md",
+      "bytes": 8416,
+      "git_blob_sha": "48a7bfee22541d5b3964375318754a7b25a66038",
+      "sha256": "549d497ed513ac6d40fa5d475d07dae490bd7b5b7b2b5b2d958e2dc41a95c92f"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/geospatial-remote-sensing.md",
+      "bytes": 13202,
+      "git_blob_sha": "4e0a8192efb3cee39d692ed5f41b0669a643eadb",
+      "sha256": "c962d681d463da491deebee6fec29a5a2a29680cfcf74a1e85d73d09d7315fcd"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/information-communication.md",
+      "bytes": 9080,
+      "git_blob_sha": "3f983ebb654a25524db3a562aceaa32549a3b33d",
+      "sha256": "7deddea43fc558bad1afeb3a07906993bb3c36ae90dadf3c652e5b7943d15eac"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/kd-lookup.md",
+      "bytes": 15737,
+      "git_blob_sha": "2c2d51fc2e007a8bdfa09a7d41de4e9f49dbccf5",
+      "sha256": "c3876ac3fff39fdf2131638d2fb0494b97dae1e5e7015d9cbf6b38f7b7548380"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/medical-biomedical.md",
+      "bytes": 14602,
+      "git_blob_sha": "0f519f02e0a034e74a32af72795c1e5b9d798037",
+      "sha256": "52facbeb34c6694ec4cfbee982f064eecc45e281f6125594b0de3e4be4ed8f53"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/question-distillation.md",
+      "bytes": 16078,
+      "git_blob_sha": "e2b97d0769169e70173895158f2dd92a969eaa91",
+      "sha256": "3c6e89a79eddee33172e79b57d1ba7aff51857a6861e78e64691da90e8c5a718"
+    },
+    {
+      "path": "nsfc-benzi-audit/references/representative-works.md",
+      "bytes": 6753,
+      "git_blob_sha": "5520208be1338f5b08317957327977c23043b81c",
+      "sha256": "ee0aa98344ba6e67b21e9081a7c65e9e53ce33ffa9e2c9b00d4f579b62f73784"
+    },
+    {
+      "path": "scripts/test_validate_repo.py",
+      "bytes": 3012,
+      "git_blob_sha": "9a09ef42a60accfb941a00c0a94cef47ef1e878c",
+      "sha256": "9c4153cd6d46216b97693ba60ac821935427d09e2fb516ef2e3086f0bd0d75c8"
+    },
+    {
+      "path": "scripts/validate_repo.py",
+      "bytes": 6223,
+      "git_blob_sha": "480034a575eec75f0087e50bfdb66917d2becafe",
+      "sha256": "386e7c1c38e88c39e2f7110f61f9a1ec2361ad81aa7a31712749aade89b66dfd"
+    }
+  ]
+}

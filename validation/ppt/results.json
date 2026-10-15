@@ -1,0 +1,89 @@
+{
+  "scope": "synthetic Chinese editable PPTX; file-level checks only",
+  "passed": 19,
+  "checks": [
+    {
+      "name": "exactly_three_slides",
+      "passed": true
+    },
+    {
+      "name": "wide_aspect_ratio",
+      "passed": true
+    },
+    {
+      "name": "chinese_text_in_native_shapes",
+      "passed": true
+    },
+    {
+      "name": "synthetic_disclosure_every_slide",
+      "passed": true
+    },
+    {
+      "name": "no_unsupported_significance_claim",
+      "passed": true
+    },
+    {
+      "name": "speaker_notes_present",
+      "passed": true
+    },
+    {
+      "name": "one_native_chart",
+      "passed": true
+    },
+    {
+      "name": "chart_numeric_values_preserved",
+      "passed": true
+    },
+    {
+      "name": "chart_categories_preserved",
+      "passed": true
+    },
+    {
+      "name": "all_shapes_within_slide",
+      "passed": true
+    },
+    {
+      "name": "embedded_editable_workbook",
+      "passed": true
+    },
+    {
+      "name": "no_full_slide_raster_fallback",
+      "passed": true
+    },
+    {
+      "name": "pptx_zip_crc",
+      "passed": true
+    },
+    {
+      "name": "valid_deck_accepted",
+      "passed": true
+    },
+    {
+      "name": "empty_deck_rejected",
+      "passed": true
+    },
+    {
+      "name": "corrupt_pptx_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_pptx_rejected",
+      "passed": true
+    },
+    {
+      "name": "unsupported_extension_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_parser_rejected",
+      "passed": true
+    }
+  ],
+  "not_tested": [
+    "PowerPoint application editing and repair prompts",
+    "screen reader reading order",
+    "paid image generation",
+    "Beamer",
+    "real research-data accuracy"
+  ]
+}

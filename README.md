@@ -1,8 +1,8 @@
 # Skill Library · 个人技能库
 
-精选的科研、财务研究、Notebook 和知识整理技能。每项保留来源、固定版本、许可证、适配记录与实际校验材料。
+精选的科研、财务研究、演示汇报、Notebook 和知识整理技能。每项保留来源、固定版本、许可证、适配记录与实际校验材料。
 
-**当前收录 8 项，校验日期 2026-10-15。** 完整开源仓库保存在 4 个公开 fork；这里管理经过选择与适配的技能。校验范围限于下表，不能延伸为对整个上游仓库的认可。
+**当前收录 9 项，校验日期 2026-10-15。** 完整开源仓库保存在 4 个公开 fork；这里管理经过选择与适配的技能。校验范围限于下表，不能延伸为对整个上游仓库的认可。
 
 ## 按用途选择
 
@@ -12,12 +12,13 @@
 | [statistical-analysis](skills/statistical-analysis) | 选择统计检验、检查前提并解释结果 | 33 项测试通过，另做合成结果复算；可选贝叶斯采样及 Linux 未验证 |
 | [model-update](skills/model-update) | 财报发布后更新季度与全年盈利预测 | 2 个独立合成场景通过：140 条直接断言及 10 条报告审查 |
 | [sector-overview](skills/sector-overview) | 界定行业、比较公司与估算市场份额 | 2 个独立合成场景通过：101 条直接断言及 10 条报告审查 |
+| [scientific-slides](skills/scientific-slides) | 科研汇报、组会与答辩的证据叙事和可编辑 PPTX | 19 项文件及异常检查、1 项 Windows 路径回归通过；3 页渲染复核完成，PowerPoint 应用内编辑未验证 |
 | [jupyter-notebook](skills/jupyter-notebook) | 创建可复现的实验或教学 Notebook | 17 项 CLI、格式、算术、独立内核运行检查通过 |
 | [defuddle](skills/defuddle) | 把网页 HTML 整理为正文与 Markdown | 8 项合成 HTML 测试通过；锁定依赖，避免覆盖原文 |
 | [obsidian-markdown](skills/obsidian-markdown) | 整理带属性、双链和嵌入的笔记 | 与 Bases 共用 12 项文件检查；应用内渲染未验证 |
 | [obsidian-bases](skills/obsidian-bases) | 为笔记建立筛选、公式和表格视图 | 与 Markdown 共用同组 12 项检查；公式求值与界面未验证 |
 
-报告：[科研](validation/research/report.md) · [金融](validation/finance/report.md) · [Notebook](skills/jupyter-notebook/validation/README.md) · [知识管理](validation/knowledge/report.md)。金融案例是合成数据行为测试，不是投资收益回测。上游工具可运行也不代表所有真实数据任务都会正确。
+报告：[科研 PPT](validation/ppt/report.md) · [科研](validation/research/report.md) · [金融](validation/finance/report.md) · [Notebook](skills/jupyter-notebook/validation/README.md) · [知识管理](validation/knowledge/report.md)。金融案例是合成数据行为测试，不是投资收益回测。上游工具可运行也不代表所有真实数据任务都会正确。
 
 ## 上游与个人 fork
 

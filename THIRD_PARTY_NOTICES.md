@@ -4,7 +4,7 @@ This repository is a personal, independently maintained selection. It is not an 
 
 | Directories | Original author / source | Applicable license |
 |---|---|---|
-| `skills/exploratory-data-analysis`, `skills/statistical-analysis` | K-Dense AI, scientific-agent-skills | Each directory's MIT license file |
+| `skills/exploratory-data-analysis`, `skills/statistical-analysis`, `skills/scientific-slides` | K-Dense AI, scientific-agent-skills | Each directory's MIT license file |
 | `skills/model-update`, `skills/sector-overview` | Anthropic, financial-services | Each directory's Apache-2.0 LICENSE |
 | `skills/defuddle`, `skills/obsidian-markdown`, `skills/obsidian-bases` | Steph Ango, obsidian-skills | Each directory's MIT LICENSE |
 | `skills/jupyter-notebook` | OpenAI, skills | Apache-2.0 LICENSE.txt |
